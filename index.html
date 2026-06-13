@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Outsource training walkthroughs</title>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIk91dHNvdXJjZSBUcmFpbmluZyBXYWxrdGhyb3VnaHMiLCAic2hvcnRfbmFtZSI6ICJPdXRzb3VyY2UgV1QiLCAic3RhcnRfdXJsIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIsICJ0aGVtZV9jb2xvciI6ICIjMGYyYzQ2IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTUFBQUFEQUNBWUFBQUJTM0d3SEFBQVpUVWxFUVZSNG5PM2RlNVFjVlowSDhPL3ZkMjkxei9ROE01TmtBZ2tnNEVhY0FUU1NHRmtlSGZMYWlHaFljU0lMSHNQakhJSWFGVmR4UGFnYnMzc0VCZkdCaXVDRGg2S0xqaXNFSWdiellsemlvc0JHQ09rZ0cyQUZRaDRrODM1MjE3Mi8vYU82WmhMeTZrbG1NajFWOTNOTzBEUFQwMTA5OC90VzNWdGQ5YnVFNFVkSXB4V2FtdzBBQ2I5WTg0N1prMzFLMWxQT1RvUGk2YkMrRmRDRlJGUUJFUUZBSTdBdFR2RVNFSkdJZEJMa0ViQm1HUHVVZUx4UlMzK201WmwxMi9aNjdBRnJhamdNWjlHRkcrbUhYNmlwWDFEdnMxbEk0SXRCY2hLUnF0djdaY1VPKy90eHhod0NzY3IvLzZBV1JNeE9DUDFOWUIvVVZxMW95YXpLRER3OG5kYkRHWVRoQ1VDd1VUNEFUS2hQbC9kejZVSVNXVXhNODhBS0VBc1JDNGkxQUFESmJ6eVJPdmlUT3JFaFlnQUFsSzlIWWlaaWdCaXdCbUpsdFJEZG03UzlLOTdJTkhjQjJLZm1qc2JSQmFDeFVhRytYckI4dVIxM3l0d3FXNmF2QkdRcHNUNFZZb005dk1BSENRTkVSLzE2VGx3SUlBSWhDNEltVmdBeHhQb3ZBdlE5N3ZidmJuMXBUVHVXTFdOa01vU21Kbk9rTDNUa0JkbllxTUlYcmpoOTNxY1kvRmxTK2tTeEJyRFdCd2tCYmcvdkRBY3hFQkl3YTJJRk1mNHJGdmJXenVkVzN3WmduMW9jcWlNSlFQZ3pVdFV3WnhiWXU0R1k1NG0xK2NJSEErQWoyUmpIT1F3TGdRMkN3QkJyVjhQbWJtemZ2UFl4N0ZXWFEzbkNJUlpxb3dwZm9MSmgvc2ZBM25waW5pZSs3ME9NQlVFUC9Ua2RwMkFNZ29ZWUs3N3ZFL004c0xlK3NtSCt4L0xmbDN5TkZxendJMEQrTUZOeDJweGExdnA3ckwxTHJkOXZJSENUV1dkMGlCZ1F3RHFwckorNzMvciswczduMSs0WnlwQ29zQURrWjl3MTliUHJqVXFzSXVJVHhQZytDS3JnNTNDY2tTRVFHRkphaTloWGxja3VhTW1zeXhSNmx1and4WnQvb3JLM1g5Q2dkV0l0RWRlSk1YNSt1T000eFVIZ2sxSmF4TzcwL2V5YzdpM3JOeGNTZ2tPUDF4c2JGWnFiL2ZLR3VXL1hPcm1haU9yRStNWVZ2MU4wQ0ZxTWI0aW9UdXZrNnZLR3VXOUhjN09QeGtQUENRNXhCR2hVUUpQSkQzdldFdEdrb1BqZGVOOHBZaUtHbEZZaXNrT1o3SnlXekxwTVdNc0hldmhCamdETEdHaXk0MDZaVzJWSXIzUEY3NHdaUkNwL0pKaGtTSzhiZDhyY0txREpCalc5dndNSG9ERkR3REt5S2I2RHRNNlArVjN4TzJNRWtSSmpmTks2enFiNERtQVpCVFc5di8wRGtEK0ZWTm13WVFucnhLWGkremszNW5mR0hJSVczOCt4VGx4YTJiQmhDWnFheklIbUEvdW1JbC84MVdmTU8xK2cxMEtNQU5EN1BjNXh4Z1lCNElNVUVmdzViWnRXLytITm54SHNld1JvMmtVQVlBWExpVWhEaE9HSzN4bTdDQ0pNUk5vS2xnTVlxUEhRWUFEU2FRMDArNVduejEvS3lwc1ZmTkRseHYzT0dCZE1pbjFXM3F6SzArY3ZCWnI5b05iejM5NzdmNDg3NjZMU25tenVlU0thSXRaSWNFRzI0NHgxWW9rVmljaHJxWVIzMnZhblYvYUczd2dLUEoxV0FLU3JMM3NOc1Q1QmpEV3UrSjNvSUJaakRiRStvYXN2ZXcwQXlkYzhCbTVTcVRyajNHcXhxV2VKZVRMRUN0eFZuVTYwV0JDVFdMdU51T2ZNOWsyUHR3RUFoM3QvTmlVTFdIdFRZSzJCSzM0bmVoaldHdGJlRkRZbEM1QS9DakNhSndyU2FXMklyZzcyL09MTytqZ1JKUVN4WW9pdURpNlVteGdVZTNuOTdIcWxFcHNoZHJTMzBIRkdIakdNeVRaMFpkWmxHQUF4NncrUVVnSkJiclMzelhGR2xDQkhTZ216L2dEeVozcUVCQXRoaFlMdURZNFRZU1FNSzBTQ2hRQ0VhczVZTU1WWWVZcVlKZ2J0V2NqTkFad0lFeUZTRUN1N0ZOTjBObVNtZ3JsT3hJb3JmaWY2aUVTc2dMbk9rSm1xNGRNTXFMSFJuNUNad1NPWVVXTU5aRXo4Sm80Y0VhQjQ1SzV3RVFpc2xYeTcxNkltOEdtR0Z1QWNKaUt4WW92MUFLQ1lJU0xvN09xRzcvc2oxazYwdktJTVdxbXg4TWM3SWtRRTN4aTB0WFdPM0dzb1JsbHBLWkpKRDc1L3hBM2JScGFJRUJOYjRCeE5MRDJqdlQySG9wVkNlMWMzdEdLY00vMU1MSngvSHVyRzEwQkVRTU1jMk9YZnZndXY3ZGlGaE9kRkxnUkVoR3d1aHltVEptTFpqWjhmb1ZjUnJGejdSenoyeEVaczM3NEw0MnFxSVZLOFJ3Tmk2YUhLMCtkM0VLaWlHTHMwZTFwamQwc2JMamo3WGZqaUp4ZGp6am5UUi9UMXpycm9LbXgrNFNXa1NrdGdiZkg5UG80R002R250dzhOVTAvQjB5dnZHdEhYZW0zN0xuem43aVo4KzY1Zm9UeFZDZ0JGR0FLQ1FEcDF2ai8vYUcvTmZyUlcyTjNTaW45SXZ3Y3JmdngxSkJOZWZteHBoejJxeGxnb3hUaDdXZ1ArOHR4ZndXV3AvQlVoMGNITXlHVnpPSHRhQTN4akJ0N3pjQ01RcGh3M0ViZmM4QW1jZEh3ZFBybnNXNml1cWhqMjF6bDZBaUtxME1XNE9JVmlSa2RuTithZU93TVAvUEFtSkJMQmVGSnJCV0Q0SjNBRWdsS01SUmZOd1E5KzlzQ3dQMy94SUN5NmFBNjBVZ1B2ZVNSWUsvQ053ZElyUGdRUTRUUEx2NE9LaWpKWVcyUlhHa2lSM3ZGbFJaRHdOTDY5N0RxVWxpUmhURmo4STBNcGhyRVc1ODk4Sno2KytCTHMyYkViQ2M4YjlqbkdhQ0FpSkR3UGUzYnN4c2NYWDRMelo3NFR4bzdNM2ovRVRQQzBDa0t3K0JLY04vTWQ2Tzd1QVhQUmZjNUtSWGV6dTFJS2JXMGR1SGpCK1dpWWVqSjhZNkRWeU4rWVJrUVFFWHpsdXF1dzhibS9Zc05UbTFCZW5zb0hZY1JmZmtTSUFObGNEbTN0blRqbjc5K0ZyMXgzMVlpY1BEZ1FJc3AzK1Jjcy9lZ2xXTC9oYVZTVUU0cnNHRkI4M1I1SUJFTEFCeGZNT3FiVGNzNEhvSFpjRlpxYmJzZFh2M3N2dm4vdnI3Rzd0UjAyNTQrOXp3aEZ3SjdHK0hGVnVQNmF5L0RGVHk0ZU9KMDhrcCtsN0UwcEJoRWgvWjVwT1Bta3lkaTF1d1Zla1oxaEs3b0FDSUlKMjZrblRjN2ZyWFBzQ2k4OENpaG0vT3VucjhTU3l4Wml6WWFuOE5JcjI1QklKQVpXZUNwMnhJeHNOb3RUVHB5TXVlZE1SOTJFR2dBNFpudi9nZTNJdjFidHVDcU1yNm5DdGgyN2tFaDRSWFhPcGVnQ0VNcG1SK2ZDMVBDUFpxeEYzWVFhWEg3eC9GSFpqdUZrcklWaUhyVTVqWWpBOTAxUnpxbUtOZ0NqL2NzS2h3dlcycUxhWXcwRlVYQTBWYU04K1NTaVVmOTdIa3pSQnFBWUVCSFVNWmlBTzZPbjZNNUxPYzZ4NUFMZ3hKb0xnQk5yTGdCT3JMa0FPTEhtQXVERW1ndUFFMnN1QUU2c3VRQTRzZVlDNE1TYUM0QVRheTRBVHF5NUFEaXg1Z0xneEpvTGdCTnJMZ0JPckxrQU9MSG1BdURFbWd1QUUyc3VBRTZzdVFBNHNlWUM0TVJhYk5xaVdBbjYreERob0gxK0NJT3JKSXgyTHgzbjJJaEZBSUorbUR6WUI3dUFIazNIdW8yZ016b2lINEN3a0o5OTdXVjg0OUhmWUhkMzV3SFhBU01hN0VKNnpma0w4TDR6WnJnUXhFQ2tBMkR6QmZ6Q3ptMlk5WTBiME5yZEFhWDBQc1V2Q0k0T3hsb2cydzk0SGg3YStBUitlZTBYc0dqNmVRTjlOWjFvaXZSZjFvb0ZBYml6K1hkbzdXcEhYVlVOcWtwVHFFNlZEZnlyTGF1RVpzYVpVOTZDZTY3NUY1dzhZUkxnNS9DZHRROEJ3REZySmU2TWprZ2ZBVUxkMlQ0UU0zeGpnbWEzZTMxUFNLQ0lzZno5bCtQaWFlL0I3TlBPeE5LZjM0NFg5K3dDVUZpVFhpdHk4SmwxRkJCRmRrY1Fpd0FvVWdQaitYQkJOQUdRVUJwdnRPL0Jsei93RVZ3ODdUM0krajVPcUptQWJqOVg4Q0lPWGQyOTJMV25OZEp6QlJIQnhOcHhLQzhySGUxTkdYYXhDSUFFS3dMQ053WUNnYkdDaE5aNG83TU5DOTkxTHBhOS96TDAremtrdFljdlBmZ3pyUDNMRTVqeHRqTVArN3krYjdCemQ4dGd1Q0o0RUFoT0d3dDI3bTVCU1hMU2lLN1ZOaHBpRVFBaWd2Zysrbkw5K00zSHY0U2RIVzI0OGlmZndLbVRKdVBXUlZjREJDUzFoelZiTnVLcnY3MGZwZVZWc0hMNDFXRENvMFM0OTQvcVFTQjhmOFcwdE5Gd2lVVUFqRmhVSjB0d3p6VmZ3SHRQUHdzQXNHWDdxempycExmaTFBbkhRUUQ4YmM4dWZQaUh0NkM2ckJ4OXVWekJlM01SQ1ZZL2pHQnhEQ0FxdmlWT2gwa3NBdENiN2NmcGI1bUtoZStjaWF6dlF6SGp4bi84S0FRQzN4cjA1M0pZY3QvMzBOSGJqZXBVT1VTeUJUMHZNeU9aOE5EVDF4L1pTU0lRVFBKVEpjbGlYT2IwcU1VaUFKVWxaWGo4MlQ5anlYM2Z4NTBmK1FSeXhvZW5CdC82VjFmL0NvOXUvQlBHMTR5SHlhOFFYMGc1SzhVNHZtNDg5clIxQUVXMzNQZ3d5Yit2MnVyS0VWMWJlTFRFSWdBNTQwT1ZWK0Fuai84ZWMwNTdCeFpOUHhldnRMeUI4bVFKTnJ5NEJmKzI0ajdVMXRRaVozeHdmajByVytDUVJpbUZpYlhqUnZnZE9DTWxGZ0VvU3dTcnpVK3Nxc0pWOTM0YnZibCszTm04Q2xtVEF3UW9UWmFBRUZ3QXA1Z2hXWXVrNXdFbzdKcWdLQS8vUTFFZDRVVTZBRXdNQWJBay9WN2MvY2UxMk5YUkNxVVVycmp6NjREMkFMRUFFWlQyMEpQTEJtc1NFMkN6V1h4bTdrSUF3ZmhYSGVhdkg5WGlpSU9JQnlCWStIcHEzV1E4OXJrYkJ5NkdTMmdkWENlRVlJZ2JudDRUQ0JpTUplbkJpK0hjZFVEUkZ1a0FBSU9ydjU4NTVXVDg5T3JQRnZ4ejdrclFlSWg4QUFEa0o3WHVoaGhuZjdFSUFJQWgzeERqeElQYnpUbXg1Z0xneEpvTGdCTnJMZ0JPckxrQU9MSG1BdURFbWd1QUUyc3VBRTZzdVFBNHNlWUM0TVNhQzRBVGE3RzVGZ2dJTG5kR0FUZXZ1S3RBNHlNMkFSam84VmxBYlJ0cndjenVtcmtZaUVVQXdodGJzc1pIVDM4L21PbWdSd0ptUW5reWVoM1FuQU9MZkFEQ0cxdnUrZU1hM0x6cTEram83NE1pRG9aRGV5RUU5d3hvVnJoc1pocGZlZjlsMEt5QXZkcW1POUVUNlFDRXc1NzFmMzBXVjk3MVRaUW1TNkJZN1Z2OE1qam0xOHhvNiszR2pRLzhGR1dKRXR4dzRTTFhIajNpSXYyWERRdjkvai8vQWNTTThtUUttaFU4cFlOL3JGQ2FTS0tydnhjelQ1Nks1dXUvaGdVTlo0RVRTZno2ZnpZQWNIZUdSVjJrandBaHhRd1JDZnA5NXNjendiSkpoTjVzSDZaVWo4ZHRseTVCL2ZFbjRuZWZYbzVyZnZaZFBMNTFTOEhQMzllZmpXVGZ6QkFSb1NTWkdPM05HQkd4Q0VCSU1hTzN2eDlNREU4cE1ERjZjem5jZWNrVnFELytSUGpXb0NlYnhmcm5uMEZwb3VTd3p5Y2lhR25yd0o3V0R0QWhKdFpqR2dGaUJiWGpLbEZUWFJtNVU4U3hDUUN6UWtkdkQwNGFQeEY5dVN6MmRIV2dxN3NMMTErNENKZlBuSVdzOGFGWjRTTS92Z1ZiWDM4Vk0vNnU0YkRQNmZzR3JlMmRneTBEbzFVYmd4U2h0YjBUbGVWbDhMeG9sVXdzQnJpS0diYW5DNU9xeHVIMzEvMDcvdlBhRzJDTXdRVU43OEtYTDdvVS9YNE9DYVZ4MjlxSDhQQXpmMEpwV1VXd1psZ0JvdGd3OWtDaStqNmpGZWVENk0xbDhkYmpUOFNhejkyRUUyc200TVNhQ2ZqeEZkZmhsUEdUVUZHU0FnQnMySnJCWjM3NUk5UldWS0dycjdmZzU3YldEbjZ1RU1ValFQNTl1ZmJvWTVnVlFTcFppdXBVT1h4ckFCQXVlM2Q2NFB1dnR1N0dSKy82SnNwTFNvYzBqdGRhb2FJOGhiYU9ycUFMM2ZCditxZ2pCTCsvNnNyeXlLME9BOFFrQUJYSlVqeTdOWU9MdnJzYy8vWDVyK2RERU9qM2M3aisxM2ZocFYzYlVWc3h1REpNSVpNOUlrTGQrQnFrU2t1aU9RRU9FVkJSbGhydHJSZ1JzUWhBZDdZUHVySWFUN3owUEw3d20zdnd0UTllZ1RWYi9vS3laQW1lZlBrRi9ITERha3lvbllpc0g3UkhaeUxrakYvdzgwZTFPT0lnRmdFNGRmd2srUDE5T0c1OEhXNWQvU0E2KzNyeDIwMVBvamViUlltWFFNMjQ4UkFSYUtXZ21kSGEzWWtwMWJVQWdzUC80Vlova2ZBL0VaNERSUEd0QVJFUGdLTGdBN0JyWjEySUIvL3lCUDY4TlFOb2pkc2YrU1VRWHZBbUF1eHpoa013c2JJR3l4ZGVEaEVKUHVBNlhIdjBnZjlFVUZUZlYxNmtBeEIyaGg2WEtzZjZ6OTJFKzU1WWoxMmQ3U2p4dkgxT2M0WkZIbDQxZXZuTVdaaGNYZXZhbzhkQXBBTUFESVlnbFVqaW12TVhGUHh6aFF4OW5MRXY4Z0VBQmtOZ3hCWjB0b2FaWGZISFJDd0NBQVFoMEJTOTg5ak8wWEVEWENmV1hBQ2NXSE1CY0dMTkJjQ0pOUmNBSjlaY0FKeFljd0Z3WXMwRndJazFGd0FuMWx3QW5GaHpBWEJpTFRiWEFsbVJ3bTdzbHFCQmJsUzdJRGo3aWtVQXdpNXdyQXEvR0M1c3F1dEVXK1FERUJieTZ6dmV3QS91ZXdCNzJqcWd0ZDZ2bFNFaDdDVkt1R3JSK3pDdFlhb0xRUXhFT2dCaUJTRGc5WjI3Y2U2aVQrRGxMVnNCM3c5dWczenpmUUZoblhzZWZ2U0xGVmg1MXkyWWM5NE1HR01ITzc4NWtSUHBBSmg4di84ZjNQY0FYdDZ5RldlZk93Tm5uWG5hQWZmczRkZGVlWDBISHY1ZE0yNjgvV2VZZTk2TW9PblZZVVM0TCs2QXFCNElJeDJBME83V2RsQTJoN09ubjRGYnY3ajBrSTk5ZU0zamVIakZHblIwZHdNb3REL1FzR3ltTXdwaUVRQlBhd2lBL3Y0c2ZHUGdHd1A5cGdseCtMWE83aDRJc04vM0QwWkUwTmJSRmZuMjZOV1Y1WkdjRDhVaUFHRnhFdEZBWVIrb3dMVlNBNmMvQ3lsb2F3VTczdGlEenE2ZW9EMTZSSWtWOVBiMVk5S0Uyb0tHaEdOSkxBSXdVb3d4Nk9udHk3Y01qKzRSQUlyUTA5c0hZd3lZbzFVeTBYbzNvNER6SFNlaUxib3RZdHo1dmFOa0kxLzhnYWkrejFnRlFFUUdKc0VIK3plVVB2aWVwekcrcGpyeVJ3QVJ3ZmlhNnNpdERnUEVaQWdrQUVpQVpDSVJOTUE5eUFRWUFNckxVa002c1Y5ZFdZNnlWUFRibzNzNm1xVVN6WGYxSmt5QUpEeHMvYi9YY1AvRGEyQ3Q3SGMySS96YWs4OXNnUzVKRG1tdkh0WGlpSU5JLytYQ2lkdmlTeTdFSGI5WWdZZFdQWWFIVnE0QjdFR0ttd0FrRWtBMmk2c2Ezd2NBN2xLSWlJdDJBUExyQTU5MXh0dXc4c2MzNCtzL3VBOGRYZDFRV2gzZ1lqaUNRQ0JXY1BXSEw4S1N5eThPdWtPNzRvKzBTQWNBR0d5TU8vLzhkMlArK2U4ZThzODYwUmFMM1JzUndWaGI4TGplR0hQNEJ6bVJFUGtqUUdnb0MxMm9JZHc0NDR4dHNUZ0NPTTdCdUFBNHNlWUM0TVNhQzRBVGF5NEFUcXk1QURpeDVnTGd4Sm9MZ0JOckxnQk9yTGtBT0xIbUF1REVtZ3VBRTJzdUFFNnN1UUE0c2VZQzRNUWFJOXI5REJ6blVJVGRmWDlPYkJFUmkwam40T29RamhNWEJCSHBaSUk4UXF3QWthSzZFVGFxcmZqaVNFU0txM3VlaUNGV0lNZ2pMSlpTbzcwOSt5R2dKT0dOOWxZNHc0U0lnalVhaWlrRUFNUlNpZ25ZSUVXMEdod1J3Zm9Heno3L0lvQnc0VHBuTEFvTC92V2R1N0Z0NXh0SWVGNXhoSUNJUkVRSTJNRFE4aVNLYUJJZ0ltQm0vT2JSNXVMNFpUbEh6SmlnRmMzYURVOWgyN2FkU0NZU3hiU2VHa0hMazZ4RXZRQnJkeEl4RmNOeWI4WmFWRmFVWTkzalQrR0pqUmxvcFpEei9kSGVMR2VJUkFURUJDTENiWGMzb2FTMHBFam1kU0pFVExCMnB4TDFBcmRzV3ZVYUlDL24xL2dwdkRmNGlBcU9Ba3UvL0EzczJ0MEtUMnZrL0tLYW96dUhZSXlGYnd3VU03NTR5NTNZdVBsL2tVcVZES24xL0FpeVFhM0x5eTJiVnIybUFaQVFWaERUVEJpeUlJeDZWeWhyQmFsVUNaN0piTVdDeGYrTVIzLzZMVXlvclFZd2VGaDFpcE5TSFB3RDQ0YWI3OEJOdDkyRG10cHhNS1lvaWg4UXNtQmlzVmlCY0lIUDh2clo5VW9sTmtPS1pDUHp0RlpvYisvQ2FXODlDZGN2dVF3ZnV2QUNwRXBMUm51em5NTjRldE5mY2NzUGY0R20zNjVEZFVVNVRISHMrUWNSdzVoc1ExZG1YWWFBUm9YMExxcmNuVmpGU3M4VzQxc1FqZnBSQUVCK3VWSkdUMjgvc3RrY3BwNXlBdDQ3NjJ4TXJLMkdpRnVmdDlnSWdFZWIvNFNuTnoyUHJwNWUxRlJYRnMrZUh3ak8veXZOMXZqck9zWm5GNkI1b2hEU2FZM21abjljL2R4L0VpLzVDL0Z6UHFpNGVvWnlmakxWMjl1UDNyNStvTmoyS000QUw1bEFxclFFV2luNHhkWmtXT0NUOWpUbCtpOXJ6YXo1RDZUVG1wQS9CVnAxeHJuVllsUFBFdk5raUJVVTRaV2lSQlEwdVhWNy9xSmxyUlRMWlBmTkxJaEpyTjFHM0hObSs2YkgyNENnTzdRZ25kYnR6YzJ0RlEzemIyVlczeExmR2xEeEJTQmM1TTV4aGt4Z1NTbHRyYjIxWTlQanJlSElKOXlYRWdBY2Q5WkZwVDNaM1BORU5FV3NFWUNLTGdTT00zUmlpUldKeUd1cGhIZmE5cWRYOW9iZkNBdGNrRTZyN1UrdjdCR1JtMEZNRUNySzQ1ampESmxRTVB3UnVYbjcweXQ3a0U0cjVPK0RlZE5vT3EyQlpyL3k5SG5ybWIxWlluS21XTTRJT2M0UkVUR2tQR1Z0N3JHTzUxWmZFTlo0K08xOWh6aU5Fd1VBbUxCTVJId1FXYmc3eHB5eFMwQmtSY1Jud2pJQUF6VWUyamNBVFUwR2pZMnFiZFBxUDRqTmZZcDF3b1BBWFlqampFMENuM1hDRTV2N1ZOdW0xWDlBWTZOQ1U5TStaMUVPZkVLeHNWR2hxVjZxVHYvdm41UFNsNHJ2RjkxbkE0NXpTQUtmdE5aaS9QdmJuenY3Y2pSbTZNM0ZEeHpzWEg5VHZRRExoWHZzdGVMN08wa3BYV3gzakRuT1FZa1lVa3FMNysva0huc3RzRnlDbXQ3ZklUNVNhbFJBazZtcG4xMXZWR0l0RVUwUzQ3dEpzVlBjZ3NzZGxJanNVQ1k3cHlXekxoUFc4b0VlZm9qei9NRjhvQ1d6TG1Pc1AxdEV0cE5TeWgwSm5LSVY3UG1WaUd3MzFwL2RrbG1YUWVQQml4OG81S0tDL0NkbVpXKy9vRUhyeEZvaXJoTmozSnpBS1M0Q241VFNJbmFuNzJmbmRHOVp2em1zM1VQOTJPRS82VzF1OXBGTzYrNHQ2emNyazVzdElxK1MwanAvZHNpZEluVkdtd1RGcjdXSXZLcE1ibmFoeFE4VWVzRmJjN01mRG9kc0xqZE5yTG1mdllRR3hMb2hrVE5xUkF3Z2xyMkVGbXZ1dDduY3RJRmhUd0hGRHd6NXVzcUI4UlJWTnN5L2xwaHZKMllFcDBtRjNiVkR6ckVoRmtLV3ROWmlMY1RhajNkcy92MGRBT1JRRTk0RE9aSUxpOE9ma2FxR09iUEEzZzNFUEUrc0JhejE4MWVSdWlBNEk4RkNZTUdzaVJsaTdXclkzSTN0bTljK2hyM3FjaWhQZUNTRktnQUVqWTJxZmZQYXg5bzNyWnB2VE83VEVIbUZ0S2RCek1IOHdBMk5uT0VpQmdJZnhFemEweEI1eFpqY3A5czNyWnJmdm5udFk4R1pubnhkRHRIUjNWclMyS2hRWHk5WXZ0eU9PMlZ1bFMzVFZ3S3lsRmlmQ3JFUWF4QnN1SEQrQmtaM0s0dFRDQUZFZ3FzNG9Za1ZRQXl4L29zQWZZKzcvYnRiWDFyVGptWExHSmtEZjhKYnFPRXB5TDFtM0JQcTArWDlYTHFRUkJZVDB6eXd5cytWTFNENVc0WENkbS91UXpVSEdPeExTL2w2SkdhaS9KVFNHb2lWMVVKMGI5TDJybmdqMDl3RkFJV2U1VG1jNGR3akU5THBmV2JmTmZVTDZuMDJDd2w4TVVoT0lsSjFlNytzV0FOM0pqWHVDTVRoZmpDb0JSR3pFMEovRTlnSHRWVXJXaktyTWdNUER3cC8yQXBuSklZa1lSRDIyY2lhZDh5ZTdGT3lubkoyR2hSUGgvV3RnQzRrb29wOG94ODNQSW9YeWZmbzdDVElJMkROTVBZcDhYaWpsdjVNeXpQcnR1MzEyQVBXMUhENGZ6UXVxYUo0MzNVUEFBQUFBRWxGVGtTdVFtQ0MiLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQVlBQUFEMGVOVDZBQUFQakVsRVFWUjRuTzNkUDNaVDF4ckdZY09peDMyS0ZHbGhHakFFaHNGWUdBWkRJTk1nYllvVTZaMFJjQXVXY21WSHNxV2ovZWZiNTMyZTZ0N0t4MXJ5ZVgvYUVzcXJPNXA1Kys3RGo5blhBTEJuLy96eCs2dloxN0FYSHNnckdYbUFtc1RCZFR4WXp6RDJBR3NUQmVkNVlJNFlmSUI5RXdUL0YvOUFHSDJBVE9reEVQbkxHMzBBamlYR1FOUXZiUGdCZUU1U0NPeitGelg2QUd5eDl4alk3UzluK0FGb1lhOGhzTHRmeXZBRDBNUGVRbUEzdjR6aEIyQ0V2WVRBOHIrRTRRZGdodFZEWU5tTE4vd0FWTEJxQ0x5ZWZRRmJHSDhBcWxoMWs1YXFsbFVmWkFBeXJIUWFzTVNGR240QVZySkNDSlIvQzhENEE3Q2FGYmFyZEFDczhBQUN3Q25WTjZ6a0VVWDFCdzBBcmxIeExZRnlKd0RHSDRDOXFiaHRwUUtnNGdNRUFDMVUyN2dTUnhMVkhoUUE2S25DV3dMVFR3Q01Qd0JwS216ZjFBQ284QUFBd0F5ek4zQmFBTXoreFFGZ3RwbGJPQ1VBakQ4QS9EUnJFNGNIZ1BFSGdNZG1iT1BRQUREK0FIRGE2STBjRmdER0h3Q2VOM0lyaHdTQThRZUF5NHphek80QllQd0I0RG9qdHJOckFCaC9BTmltOTRaMkN3RGpEd0MzNmJtbFhRTEErQU5BRzcwMmRmcC9Dd0FBR0s5NUFIajFEd0J0OWRqV3BnRmcvQUdnajlZYjJ5d0FqRDhBOU5WeWEzMEdBQUFDTlFrQXIvNEJZSXhXbTN0ekFCaC9BQmlyeGZiZUZBREdId0RtdUhXRGZRWUFBQUp0RGdDdi9nRmdybHUyMkFrQUFBVGFGQUJlL1FOQURWczMrZW9BTVA0QVVNdVdiZllXQUFBRXVpb0F2UG9IZ0pxdTNXZ25BQUFRNk9JQThPb2ZBR3E3WnF1ZEFBQkFvSXNDd0t0L0FGakRwWnZ0QkFBQUFyMFlBRjc5QThCYUx0bHVKd0FBRU9qWkFQRHFId0RXOU5LR093RUFnRUFDQUFBQ25RMEF4LzhBc0xibnR0d0pBQUFFT2hrQVh2MER3RDZjMjNRbkFBQVFTQUFBUUtEL0JJRGpmd0RZbDFQYjdnUUFBQUlKQUFBSTlDZ0FIUDhEd0Q0OTNYZ25BQUFRU0FBQVFDQUJBQUNCL2cwQTcvOER3TDRkYjcwVEFBQUlKQUFBSUpBQUFJQkFBZ0FBQXIyK3UvTUJRQUJJY2RoOEp3QUFFRWdBQUVBZ0FRQUFnUVFBQUFSNk0vc0M2T1BoKzdmWmx6RGMvZnVQc3krQkFJbC9XM2QzL3I3MlNBRHNTT3FOQ2VqditQNGlCdmJoalg4Q3VEN0RENHgwdU9jSWdYVzlmZmZoaHhPQWhSbCtZQ1loc0RZZkFseVU4UWVxY0Q5YWt3QllrRCsyMHp3dTlPWTVkcDdIWmowQ1lESCt5SUNxM0ovV0lnQVc0bzhMcU01OWFoMENZQkgrcUM3amNhSVh6NjNMZWF6V0lBQVc0SThKV0kzN1ZuMENnTjF4NDZFMXp5bjJTQUFVNThhempjZU5WanlYdHZQWTFTWUFBQ0NRQUNoTVBkL0c0OGV0UElkdTV6R3NTd0N3YTI0K2JPVzV3OTc1YndHd2U3NnZuR3NZZmxJNEFTaktUYWc5anlrdjhSenB3K05ha3hNQW9qZ040QlFEUlNJQlFLVGpHNzRZeUdUMFNTY0FpR2NJZ0VRK0F3QUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnZDdNdmdBeTNYLytOT1RuUEh6NU91VG5BS3hHQUREVXFPRi8rdk9FQU1CajNnSmdtTkhqWCtWbkExUWtBQmlpd2dCWHVBYUFLZ1FBQUFRU0FIUlg2UU4vVGdFQWZoSUE3TUpoL0gzWUQrQXlBb0RkZWZqeVZRZ0F2RUFBc0x4ell5OENBTTRUQUN6dHBaRjNHZ0J3bWk4Q1lsbVhEdnZNRC83OStkZmYwMzQyKy9mYnI3L012Z1FXNWdTQVhUUCs3Sm5uR0xjUUFDeXArckcrR3pPamVLNnhsUUJnT2RXUC90MlFHYzF6amkwRUFFdXBQdjRBcXhBQWxORHlTTi80QTd4TUFERGRwZC9pVi8xOWY0Q1ZDQUNtZWpycXQzNnBqMWYvQUpjUkFFeHo2ZGdiZjREMkJBQlR0RDd1Ti80QTF4RUFESGZOdUh2Zkg2QVBBY0JRUGNiZnEzK0E2d2tBaG1vOTFoWEgzL2V6TTVybkhGc0lBSVpyTmRvVngvL0FEWmxSUE5mWVNnQXdSZVh4YnNXTm1kNDh4N2lGL3h3dzA5eC8vclQ1UTM2ckJJUWJORkNWRXdDV3M4cjRBMVFtQUpqcTJqRTMvZ0J0Q0FDbU96ZnE5NTgvR1h5QVRnUUFKVHdkK3VQL2YvamZZZ0NnSFFGQUdjOE52ZkVIYUVzQTBOMDFuL1R2UGZTK1doamdKd0VBQUlFRUFFTlVlT1ZkNFJvQXFoQUFERE56Z0kwL3dHTytDWkNoRGtNODZrTjloaC9nTkFIQUZJWVpZQzV2QVFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUtBM3N5K0FUUGVmUHczNU9ROWZ2Zzc1T1FDckVRQU1OV3I0bi80OElRRHdtTGNBR0diMCtGZjUyUUFWQ1FDR3FEREFGYTRCb0FvQkFBQ0JCQURkVmZyQW4xTUFnSjhFQUx0d0dIOGY5Z080akFCZ2R4NitmQlVDQUM4UUFDenYzTmlMQUlEekJBQkxlMm5rblFZQW5PYUxnRmpXcGNNKzg0Ti9mLzcxOTdTZnpmNzk5dXN2c3krQmhUa0JZTmVNUDN2bU9jWXRCQUJMcW42czc4Yk1LSjVyYkNVQVdFNzFvMzgzWkViem5HTUxBY0JTcW84L3dDb0VBQ1cwUE5JMy9nQXZFd0JNZCttMytGVi8zeDlnSlFLQXFaNk8rcTFmNnVQVlA4QmxCQURUWERyMnhoK2dQUUhBRksyUCs0MC93SFVFQU1OZE0rN2U5d2ZvUXdBd1ZJL3g5K29mNEhvQ2dLRmFqM1hGOGZmOTdJem1PY2NXQW9EaFdvMTJ4ZkUvY0VObUZNODF0aElBVEZGNXZGdHhZNlkzenpGdTRUOEh6RFQzbno5dC9wRGZLZ0hoQmcxVTVRU0E1YXd5L2dDVkNRQ211bmJNalQ5QUd3S0E2YzZOK3YzblR3WWZvQk1CUUFsUGgvNzQveC8rdHhnQWFFY0FVTVp6UTIvOEFkb1NBSFIzelNmOWV3KzlyeFlHK0VrQUFFQWdBY0FRRlY1NVY3Z0dnQ29FQU1QTUhHRGpEL0NZYndKa3FNTVFqL3BRbitFSE9FMEFNSVZoQnBqTFd3QUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkJJQUFCQklBQUJBSUFFQUFJRUVBQUFFRWdBQUVFZ0FBRUFnQVFBQWdRUUFBQVFTQUFBUVNBQUFRQ0FCQUFDQkJBQUFCQklBQUJCSUFBQkFJQUVBQUlFRUFBQUVFZ0FBRUVnQUFFQWdBUUFBZ1FRQUFBUVNBQUFRU0FBQVFDQUJBQUNCQkFBQUJCSUFBQkJJQUFCQUlBRUFBSUVFQUFBRUVnQUFFRWdBQUVBZ0FRQUFnUVFBQUFRU0FBQVFTQUFBUUNBQkFBQ0JCQUFBQkhveit3TElkUC8rNDVDZjgvRDkyNUNmQTdBYUFjQlFvNGIvNmM4VEFnQ1BlUXVBWVVhUGY1V2ZEVkNSQUdDSUNnTmM0Um9BcWhBQUFCQklBTkJkcFZmZWxhNEZZQ1lmQW1TYTNoL01NL1lBNXprQkFJQkFBZ0FBQWdrQUFBZ2tBQUFna0E4QlFrZC8vdlgzN0V0Z3gzNzc5WmZabDhEQ25BQkFKOGFmM2p6SHVJVUFnQTdjbUJuRmM0MnRCQUEwNW9iTWFKNXpiQ0VBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBS0F4MzgvT2FKNXpiQ0VBb0FNM1pFYnhYR01yQVFDZHVESFRtK2NZdC9DZkE0YU8zS0NCcXB3QUFFQWdBUUFBZ1FRQUFBVHlHUUNtdVgvL2NmWWxBTVJ5QWtCM0Q5Ky96YjZFZjFXNkZvQ1pCQUFBQkJJQURGSGhsWGVGYXdDb1FnQXd6TXdCTnY0QWova1FJRU1kaG5qVUJ3QU5QOEJwQW9BcEREUEFYTjRDQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDQ1FBQUNDUUFBQ0FRQUlBQUFJSkFBQUlKQUFBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQUNBQUFDQ1FBQUNDUUFBQ0NRQUFDQVFBSUFBQUlKQUFBSUpBQUFJSkFBQUlCQUFnQUFBZ2tBQUFna0FBQWdrQUFBZ0VBQ0FBQUNDUUFBQ0NRQUFDQ1FBQUNBUUFJQUFBSUpBQUFJSkFBQUlKQUFBSUJBQWdBQUFna0FBQWdrQUFBZ2tBQUFnRUFDQUFBQ0NRQUFDUFQ2bno5K2Z6WDdJZ0NBY2Y3NTQvZFhUZ0FBSUpBQUFJQkFBZ0FBQWdrQUFBZ2tBQUFna0FBQWdFQ3Y3KzUrL25PQTJSZkNZL2Z2UDg2K0JJQW0zTTlxT1d5K0V3QUFDQ1FBQUNDUUFDak1zUm13T3ZleHVnUUFBQVQ2TndCOEVMQW05UXlzeXYycm51T3Rkd0lBQUlFRXdBSlVOTEFhOTYzNkJNQWkvREVCcTNDL1dzT2pBUEE1Z05yOFVRSFZ1VS9WOVhUam5RQXN4aDhYVUpYNzAxb0V3SUw4a1FIVnVDK3Q1ejhCNEcyQU5maGpBNnB3UDZydjFMYS9tWEVodEhING8zdjQvbTN5bFFDSkRQL2FCTUFPQ0FGZ0pNTy9EMmVQKzkrKysvQmo1SVhRbGhnQVdqTDY2enIzMXI0VGdKM3l4d3JBYzg3K0t3QWZCZ1NBdFQyMzVmNFpJQUFFRWdBQUVPalpBUEEyQUFDczZhVU5kd0lBQUlGZURBQ25BQUN3bGt1MjJ3a0FBQVM2S0FDY0FnREFHaTdkYkNjQUFCRG80Z0J3Q2dBQXRWMnoxVTRBQUNEUVZRSGdGQUFBYXJwMm81MEFBRUNncXdQQUtRQUExTEpsbXplZEFJZ0FBS2hoNnlaN0N3QUFBbTBPQUtjQUFERFhMVnZzQkFBQUF0MFVBRTRCQUdDT1d6ZjQ1aE1BRVFBQVk3WFkzaVp2QVlnQUFCaWoxZWI2REFBQUJHb1dBRTRCQUtDdmxsdmI5QVJBQkFCQUg2MDN0dmxiQUNJQUFOcnFzYTArQXdBQWdib0VnRk1BQUdpajE2WjJPd0VRQVFCd201NWIydlV0QUJFQUFOdjAzdER1bndFUUFRQnduUkhiT2VSRGdDSUFBQzR6YWpPSC9Tc0FFUUFBenh1NWxVUC9HYUFJQUlEVFJtL2s4TzhCRUFFQThOaU1iWnp5UlVBaUFBQittcldKMDc0SlVBUUFrRzdtRms3OUttQVJBRUNxMlJzNC9iOEZNUHNCQUlEUkttemY5QXM0OXZiZGh4K3pyd0VBZXFrdy9BZlRUd0NPVlhwZ0FLQ2xhaHRYS2dEdTd1bzlRQUJ3cTRyYlZ1NkNqbmxMQUlDVlZSeitnM0luQU1jcVAzQUE4SnpxRzFZNkFPN3U2aitBQVBEVUN0dFYvZ0tQZVVzQWdNcFdHUDZEWlM3MG1CQUFvSktWaHYrZy9Gc0FwNno0UUFPd1Q2dHUwcElYZmN4cEFBQXpyRHI4QjB0Zi9ERWhBTUFJcXcvL3dTNStpV05DQUlBZTlqTDhCN3Y2Wlk0SkFRQmEyTnZ3SCt6eWx6b21CQURZWXEvRGY3RHJYKzRwTVFEQWMvWSsrc2RpZnRGalFnQ0FZMG5EZnhEM0N6OGxCZ0F5Slk3K3NlaGYvaWt4QUxCdjZhTi96QVB4REVFQXNEYURmNTRINWtxaUFLQW1ZMzhkRDFaRDRnQ2dMeVBmenY4QXFSNmd3WGRUN2FjQUFBQUFTVVZPUks1Q1lJST0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyJ9XX0=">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEKklEQVR4nMWXX2gcVRTGf+fOzE72TzaJsWIQrEJpS01ra6OIRks0jaDtS5XmSRB8LAj1SQJaRATxIYK+CPqsFLHQJ5EoYuuD2lqLpUViXoLYImJMabKbnZl7rw87+7e7O2Oy4Ad3h7k7957vnPOdO3METil40xR2TG5zs4XXrLXPA/eAdQChP7AgGvhDRD6PymvvrC199xecUgIwsnd6r8E9I0rtsEaDtX2y2wYRRDlYY5YU0bF/rnx1RQo7D92pMv5F5XjbbRSGCC6x51L9bbiRkphIc+Bssz8WSySu5xkdLpugMuGqjD9XNR5EiHi1J5UStDZYa+qrHcdJJCEiaK1b7h1HYYyteiN4Ngoi5Wa2k2HOFZi1JrKIOM2LSuUK+dwAnuvWN1svlfG8eoA6wBKGEflctj4Tac2ttRK57ECDvIhjTWQFZl1gDGvrOyqlWFsvcXT6cd6dO4HveVjAUYpX33qf02e+xC/kMMa0mFZKUVkrMXvsGeZffwVtDBITeGP+Yz49u0CxkEdX10mclzEZGp9pianrOPy9sspnH77NC89OtRhZL5W5+MuviJKaw7FH8a2xTOzb3RIBgIXzF5h58SR3DA+idStxl04QoRIEGGPRRuM61ezkc1kOPXqg45Jm1EKttUYph41K0CbMJAJUdaCUYKyACNZarDHdK1QAWxVvzVhtj27GexJo31tEanUJdDkqpMd/XaDSGC8FFS4tL3F9daUxLylGCgKJEXAch9Pff8NH577g+MNPcmLqCJWNgPLGBiK9+FuKhTwZx6Gh1k0QANg2OMTMAwf4aXkJRymQatn1ym3a10giAa01U7v3cXdxiLHhUZQIhVyWQlupdYKpn4hbEKEF8hmfift2ts6nUFoaLaZKgbGGG6sr5PwBRnIFoP2F0xl9EaHrOHzyw7d88PVZXpo8zMuTMwSViEoQoER6epnL+rEIuyOxDAF8z+XpPfs5t3gVJUKkI4IgpBKGBJ1GUB2NNG2hCrQxPLXrQQYzAxyfeAIlimIhT7GQTyTeHxFay0i+wMz4wdvmE9cmPpEyBcZafr/+J2ulcn1ORBJHGqQS4cL5C6yu3qQchMwenQYgDCOSbGQ8jwQNpivDldWb7Lz/Xn6+tkikNTrS3FovoZR0jbMFRoeLTXebJKCNYeqxg1y4dJWHxneRzw4AUBxMFqHulwjvGh3hucOTiQY3g64EmlVurcUYi8Qvof+KXhXjUk3QbTHy/Uxs2KBE6oJr/xjtBWMMSil8P9OVmwJuIGJpUoqIcPnqb4gIGc9DKbWp4XlevNdi/JlU99PGNm9IcXxmXjneybgxcZtD9sj+PWQH/OrilHXd8K16qYQhP16+hjGmcTZYG4mbcY0O3+vZmq2Xypgt9okSfz/UabW1Zj2bU6VUX9pjXdNNp+b0/27P/wUjt+gP4V0NFQAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAXxklEQVR4nO2de5RdVZngf9/e59b7mYTwlIAkIAkJYwddGTGUgVCkEdDusRpsMUzPgMq0TS9ZMOhSpGep0zKDdLc4nV6SFkFQe8KooE1LJRIKpaFdBtuQR4MRSMTQxpDUI/W69+z9zR/n3DygkqoklapbO/u3cteq1N333HPr/O53vrPP3t8WxpOODgvAqlWu/Kvm89/X4kv9FwnmdDFmqapTRJaISDOqCsi47kNkslFERFV7UF0rYkW9X6P4baZQ/1TPLx7p3ttyBF+OlnGSqcPCKg8oQNPc9tnGmnaFK1FdgMgpIrL37dS7ctNIsAhibP6zZrFLdTsi6wW+753v7N3UuWVvYzoMHL3YRyu0ITNTAVoWtF+hyAfwdIhN6lBF1YN6nzfJLRYzDu8dqWwU1Oc/S/bPGBEDIqhLBzCsEvTh7vWdP9jXDgH8yJscnSOXqq0toasrBWg877L3inCzEXMxYlBXAlWXbT3KG9lLJrkCIlZsAdTj1T+hyt19Gx7/R+AAtw6XIxHNgCqINs5fco5QtcKIWQKgPvWoeAR7hNuOHD8oikPUiEkMgFe/Vine2Pf82hdABeSwo7U5rF1oa0uyNxBtmn/ZXYbq54zYJepTry51IAYhIcocGR3JXBGjLnXqU2/ELjFUP9c0/7K7QBTwuXOHsdGxkp8GWs5dMksL1StF7FJ1aXaFJ2JH30AkMgqqDjFWbIKqWyOl4eu7N6/dejgpyNgidL7BpnntV2tS3SVil2paKoFqlDkybohYUNW0VBKxSzWp7mqa1341XV3pWCP16BF64cIC69aVWua1L8cm96Me9T7NU4tI5NigpGJMghhw6XXdGzsfKLt4qJcdOkK3tSX7ZLb3q0+dqvNR5sgxR0hUnVefOqy9v2Ve+3LWrSuNFqkPLnSeZjTOW/phbHK/eudATd4NF4lMAGJAjXrnsMn9jfOWfni09GPklCOXufm8S/9ATOE76lNHJn/svYhMBgp4MYlVX/rDng2rv3uwC8WRBDWANi+49Ay8+TEiJ+MdSIzMkUlE1WMsqL6G8Yt71q9+hRHuKr5Z0rY2A6g6uU9scire+yhzZNIRMXjvxSanqpP7AM1dPYADf9HRYfPuuS+ZpNCmaSn2ZkQqByHRtJSapNDWNK/9S3R1pXtH7O1tsg8D+Ka57bPFyObsAhAh5s2RyiIfDCdevZ6bj9gz5KnHfhH6DshuR64UY5JsvEaUOVJxCKhmfdSszP5/x/5PQj6e2TWd136pMUmnulLMmyOVjaoXWzDep+29GzpXlx3OpV2leaPbs9vZcfR9pMIRlGzA/e3ZLzKHDbQlgDYtaF8mNlms3inE8RmRSkeseqdik8VNC9qXAQptiaENAMXxIREDeuSzBSKRCUXxIgYcHwKUtjyHbp279HRvk42or8+bxovByFQgS43F9BuXztu9ac22LIc29nIxtiGbABhljkwZBFUvxjZg7OWQddsZh3bkJQUikamHqjq0AzDCrLaWpoaqF8WYE2KdjMgUJKsD4v3vevcUzzatzdWLjLXTs1IDUebIlENQ742101ubqxclzjPHGNl767DSEBGMMdn83/FEIXXjVrCnokisHf/QpOBV8b4iNQHEOM+cBNVl+aevqBxaRLDGMDg8zMDgMIy3fCI0NzeO7zYrhNd3decjF8YREaqqq6ivqwWoNLE1vyO+LEEZmuy9eSPGCM55urt7OfP0U1i6+B2c89bTUc2eOxpUFRGhd88A93z9YdI0xRgZ9+M/0YiA90qSJNxx8/U0NdTt/axHQ/nvsqd/gMfWPsPPN76IiNBYX1d5ZzhlSJrmtXeLSHOlDEYyxlAsFqmqquIzH7+O/9xxOdNamsb9ffoHhph14R9SLKXYQIR2XqkqJGx9+jvU19WM+3t473nsyWf5/N/cx0/Xb2ZaSzNpekQFjsYbhaxAZCJGmvOjOekyiwilNEXEsOpvP8clF14AgPM+L/Y3Pu+TzVmAeWefyTPPbaChrnbK91qKCEPDQ7x93hxEoFgsYcw4ji8TsMZwxcXvYvE7zue9f3ILz6zbQEtzI27yI7WAIkaaTaUcSSFLB7zzPHLvF7nkwgsollJUFWsMibUkyfg8jDXU1dZw9RWXUBocppBM/TkMhSShNDjM1VdcQl1tDcaacft7JYklsTYPOI7mxnoeu+8ufu+8sxnoHxjfL87RoKoVM/HVWENfXz9//L5LufjChZTSlKpCctQ54EhYa3Hec8M1V7H0PYvYsX0H1VWFyjkwh4ExhuqqAju272DpexZxwzVX4bzH2mMzvqyQWEqpo6mxns/f+hFS58e/B+rIqZwxz6qKTSz/9Zor8d4fU7nK03AKhYQVX7iFxe++gB07djEwMIiIIHmZwMp/CAMDg+zYsYvF776AFV+4hUIhOebTjAqJRVVpX/xOzp87h/6BoYoJBhVxrjXGMDA4xLyzz+T3zjt7Qv44xmTZ1uxZp/HUqr/lzhUPsuqxtfzblq3H/L3Hk/PedhYdly/hthuvBbLAMBF/P5+fBX5/ySKeW7+ZhvpaKqEnryKEhuxAVFdVUVUoTNh7igjeZ11bt914Lf/9Yx9i85ZXqJAsbAwo584+A5GslyaTeWL2vXzlVV9hF9QVIzQwKX+YsgDOOay1zJ1z5oTvw9FS3vdjcb0x6ntXQljej4oSejIpX0RV2B2wUTHGHLMLwLFQaeeyKPQbqJSLm8iREY9eJCii0JGgiEJHgiIKHQmKKHQkKKLQkaCIQkeCIgodCYoodCQootCRoIhCR4IiCh0Jiih0JCii0JGgiEJHgiIKHQmKKHQkKKLQkaCIQkeCIgodCYpgJ8mqKr5cdOVg5RFE8nWSwFROEanIURCk0EpeML1cp+IQ9SrKK0CPRy3lyOQTnNBlMX/T/Tp/8ehDbPjNVgpJ8oYiNln9utR5Tmxs5lOX/xHvPPPsLKJHqac0wQkNUHQp1668iyc3/Iya+sYDqvso2YWDkhWVcUOD/PPLL/Avn/oSs6adcNxJXRFV7seRoBJH5z0iwvpXX+Env9rEjGkzqS1U0VBdmz9qmFbXQLE4zA2Ll/Hoxz/L3DNms+N3/84/bfhZVutOp1blpKMlJJkh0AitqlixOL+vsrxXjzWG3f19LHzrOfyPq/6YGQ1NXHDGbN79+U8wVCqOadv9AxW3JM2RI6BeqampylbOCoAghQZQssr/A8VhSs7RVFNH6h11VdXc88GPMaMhW7fl6S2beem1bdQWqg69PVV27NxNd18/E1Tgc0LIqr4WOOXEEygUpr4OU/8THAQjhp6Bfs495XROa5nO4xufw7mUv1t+E//xrW8D4Bevvsx/+fpf4wpV+FEKn6bO0dc/QMGaylr/7igxRhgqlugfHKSl0IjqITuFKp4ghTYilErDnNp6Ag9/9FOcNfNkFv3lzZx94ml8ZPFlpN7RNzjIx77xFYbTFKxFx6CpiAQlM+zrFQqlyzJIoZ331FfV8MQtf8lZJ5wEwLc/chuJsSiQGMtnH32QZ3+5kZOmz2Rw9+Co2ywf7koq7j1ehNQHH6TQ1hgGi8Os/Mnj/M/3Lyf1jrfOOGnv81//5x/xlTWPMKNlOiU3tnX2kiRh5vRWdu7umdKn5DfivdLaXE9jfR0wtdMNCFRor0pSKPDF73+TBaeeyQffeVG2MpQx/Hzbr7j1/66kqaGR1DusMWPuumpsqKOhvvaY7vtEoxBUv3uQQosIqfec0DqDGx/8CjMbm+nc9Bzbdu2kZ7CfnsF+WhoaSZ3L0pDDSCNCOTWXCevTBCa0zVe2WnDaGbzrrHPp2riOpLqW9r++PVtqIi1BklBdqGZ3/56sX3pPHzNbpnPF/Hdki+7EQUpTmqCELlNlEx66/hb+4pGH2PjaVhJbALJb2l6zmyxGhJJzzGxo5tNXXM2s6TOPu9veIRKc0OWutVNbpnPvdTeN+XUaZQ6C4ISG/dYNj+OhjzuCFBoOfzx0JAzi0YwERRQ6EhRR6EhQRKEjQRGFjgRFFDoSFFHoSFBEoSNBEYWOBEUUOhIUwd76LjPqWGeR4MYEH88EK3R5KOhYBuSXZ7NEpj5BCr3/UNDdA3vygf8HthHJ5tM1VNeQWBvURNHjmeCELkfmdVu38Il/uJeXdr5GYt9crFFVSb3jhIYmPv3eq/mjCxbnA/9jpJ7KBCV0uYxu39Agy792N5t+8wpNdQ1Zscb9gq+qUluoJrGG9S+/yIe/9le87aS3MP+0M0adtRJeFYOwzkxBhSPvPQJs2r6NF3f8hhlNLRgRCklCwSYUjKWuqoaBgX5uuuQqfnTzF7js7YvQ4UGefHE9AqMWaxQJ7RGOzBBYhC5jjcEau7caqYjgvCexlt/17ubyty/itmX/ieqkwPf+22eY/5mP4kerBUb2henp65+ATzBxqCr1tTVUVx+6tt9UIUihlbwCqTH0DQ1Rcimt9Q0MFovMmnEif3P1R6my2Udf0fVPbHn1JWqrDn1Avfds/+1O+geHMCGVBFNld2I59cQTqAlA6iCFBrBi2Nnbw2XzL2DOzFP4yhOPktiEe675GLNnngzA6s3/yq0Pfw3qGkn9oVMN5z1Dw0UKSZIl0oGcqUWEUuoYGh6mproqFmusRIwIxeIQ75ozl2/dcCutdQ1s797JWTNP4crz34lXZduu3/HRB+6hvrqG3oE9Y9quiIDmZR3DCdFAOLl0kEI772msqeM7N36a1ryXY+V1f773udQ7PvEP9/Lyzn/npOZp9I6h66Kci6fO5WIf608xMWQeazA3loIUOsudB/nTb67gWzfcCgitdQ17n//iDx/mez97ihmtMyjlVf5Hi0+JtZw8czqv7+4JJppBdnOpsb6WhlissXJJvaequpr/99Mu7j5jDrct+wC9gwNYY3h6yyY+9+hDTGueRilNSaxFENwYonRtTTWnnTxzAj5B5EgJUujaQhWpc8xsncFnH3mQaXWNrH1hPa/s2oH3nsQme0+xibFovlRFZOoTlNDWGHxerLFj4YV888edmJoaPvL3/xuMzXonjEEKBfp7hxAxaKnIvFmzef9/WIRXxcZb31OaoISGfWXA7l1+EwtnzeFft/2KmqrqA+4AelUEoeRSTm5u5aZLrmJ6fWMcoBQA4QmdC1lXVc3Nl75/zK8rjwOJTG2CE7qMquLGuIimERMrjwZCsEKLCImEsZhkZOzEK6BIUEShI0ERhY4ERRQ6EhRR6EhQRKEjQRGFjgRFFDoSFFHoSFBEoSNBEeytbwDn/BiKNWbDTuPApDAIWmhr4wnoeCM4oVU1H8cvfOeHXTz/b1uorqrCvyFSZ9P3U06c3sq1f7CM+rqaOB46AAIUOpP55s/dw1/d83UYLsJINTfK4hYSvv2DJ/jB399JbW1N9tTE7W5knAlKaO89xhheeGkb/+f+hzl99iyuuerSEduq94gxdP3Lz3lyzU94dM3TfPCqpaTOkdiDDzsNpHrBAYT0BQ5K6LJsPX39FIeLnDC9lTs/eeMhX/Onn/kSP33iGXZ39x24kYMQ0sEPkaCELpNYgxhDmjpKpXTEvLgciYeLRRRIktEnAxRLKbu6e6d87Yr9eWNdjqlOkEKrsvcCL0nsyBd6khWPKT83Wveey4s1FouloIQG2DMwwKnGUFdbE2vbHS9473HOkST58hWTvUPjhBgopZ5iqURdflE8lYkdtYdBOYiHInNGWJ8m+Ah9sFQi668ee5+FMYZCwTI0XAxrhrjPUoyqQmGy92RcCFLocqVQyEQciSTJatqV2412Q8UawyknzmB3dx+hFB/NluBQGupq96YbU/27GqTQpTTN+plF2NM/gIxQ3iv1jsQYXF4ed7hYHHW7hSRh5ozWY7HLkXEiKKHLqcDsWafyltNOYsMLv+Ltl/9JtgrWQdrv6umDpgYWzn8bAGIOHaLCWwVr6kfl/QlKaBHBe8/01ma++sXb+Pjtd/Pr7b/F5AtrjtS2oa6Guz7757xr4Xn4MawoG9LBD5GghIYsZ/aqLGtbxC8ef4BXt/+WJHnjwpvsrcbf2tzIzOmt2eqzgVSxP54JTmjIUgnvPfW1NZxz1qxR28e1vsMhSKEhi9T7uuYOlidkdxOjzOEQrNBwYPfdQVpM2L5EJoYYmiJBEYWOBEUUOhIUUehIUEShI0ERhY4ERRQ6EhRR6EhQRKEjQRGFjgRFFDoSFFHoSFBEoSNBYQhjvmckAqCx0nckHETEqNeefFxwjNSRqYqCoF57DKo/EmMBHXlq9ETulY5eYy5SWVTG8VIvxoLqjwxCRRQ0U82rhsYMaMqgqhSSCpr0JNQYRH6YZxuTZpKqUltTxS9feZVXXn0NVX3TEhKRysLmweeZ5zaQFN48q36CyWpZifzQWMMvJzvdUFUKhYSdO3fxSOePERGcm/QMKHIQvPco8NKvt9P17M+pq6vF+8kOQOqt4Zdmd8/ws9651xEzqV143nnq6uv48n2r2NM/QCGxUeoKRFVxzmNE+F8rHqK7p5fC5EZoRYzxzr2+u2f4WcPWrl5Enhexik5epPaq1FRX8evXdnDV9Z9kT/8g1hrSNMV5j8/TkPiYpIdX0jSrA1goJNy54kFWfvv7tLY0k6ZusrQBVS9iFZHn2drVmwDeIqtU5OLJ26sM5z1NjfWsffpnvO+GT7Lyzts48y2nTPZuRQAEjLEMDA1z91e/xe13fZXWlqaD1g2c2H0TscgqwAtA69ylp3ubbER9fbnJ5O1dtlREb38/LY0NXHPlJVzVfhFzZp2W7dgoxRQj40s5k9jTP8Bja5/hoe91sn7zFlqaG9E8l57M3QNATL9x6bzdm9ZsE9raErq60qZ57d8wSeFaTUspMvkFaKwxlJyjr3cP1TXVQSyXMJVxztHb00dNXS11tdWVcX2jpJIUEp+WHuzd2Plh2tqShC4ABMtDqv5apDIGLJXrzU2f1oLL1zeJTB4iwvQZrflaMxUgM4BgVD1YHgKErn2phQF807xLnzI2ebf61IOMvs7ZBBITjcllsjvl3ow6MYnxLv1J78bVF5E7nEfjjvK6DJ8DESpwkSeNj0l9VByKgEjmLJQdzoVe5eAO07uhc413aZfYxIDGc3ykQlEnNjHepV29GzrXwB0mc/jAM3mWdsxtny1GNoOa/PmKi9aR45r8pCFevZ7bu6lzC7m7cOCMFU9Hh+3d1LlFVb8stmBQYpSOVBaKE1swqvrl3k2dW+josOQyw0jRd1833pMmKbRVSjdeJLJfN11X78bO95Rd3b/JSOmEAbR5waVn4M2PETkZ7xhxbbRIZKJQ9WRjnl/D+MU961e/Qr7U4v7NRpLU09Zme9avfhn8n4kYg0jFXuxGjgsUERUxBvyf9axf/TJtbQekGmVGjrpdXSltbUnPhtXfda64XEySvzgOUo5MNKqAF5NY54rLezas/u5IqUaZg6cRudR9G9d8A5deJ8ZaED/ZY6cjxxPqQbwYa3HpdX0b13zjUDLDWLrkFi4ssG5dqWVe+3Jscj/qUe/jhWLk2KKkYkyCGHDpdd0bOx8ou3iol41+obduXYm2tqR7Y+cD3qXXKGyVpJCglIh5dWT8UZSSJIVEYat36TXdGzsfoK0tGU1mOJybJnmobzl3ySwtVK8UsUvVpaDeIZU17iMyRVF1iLFiE1TdGikNX9+9ee3W0dKM/Tm8u4D7bbhp/mV3CXKjiKlTX/IoGsWOHBGqDkHEFIyqH1B0Re/zj98CcDgyw5Hd1jbZlado4/wl5whVK4yYJQDqU4+KR7BHuO3I8YOiOESNmMQAePVrleKNfc+vfQE0G3w0QtfcoThy6fb75jSed9l7RbjZiLkYMagrlb91gJTHhEQiCppNcxGxYgugHq/+CVXu7tvw+D8Chx2V9+doRSvPFFeAlgXtVyjyATwdYpM6NJ93q97nTfKLyCj5cYDu18Ur2T9jREw2QtmlAxhWCfpw9/rOH+xr9+a7f4fDOEnVYWGVJxe2aW77bGNNu8KVqC5A5JSsIlL2duodsYMkdISsxByAZmUOVLcjsl7g+975znykXNaYjr1DQI/uXceTbOQTrNq3Y83nv6/Fl/ovEszpYsxSVaeILBGR5ryYQ4zUYaGIiKr2oLpWxIp6v0bx20yh/qmeXzzSvbflCL4cLf8fa84WOpoxLuAAAAAASUVORK5CYII=">
+<meta name="theme-color" content="#0f2c46">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Outsource WT">
+<style>
+  :root {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f4f3ef;
+    --color-background-tertiary: #ece9e2;
+    --color-text-primary: #1f1e1c;
+    --color-text-secondary: #6f6e69;
+    --color-border-tertiary: rgba(0, 0, 0, 0.1);
+    --color-border-secondary: rgba(0, 0, 0, 0.2);
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background-primary: #1f1e1c;
+      --color-background-secondary: #2a2926;
+      --color-background-tertiary: #34322e;
+      --color-text-primary: #f0efe9;
+      --color-text-secondary: #a8a59e;
+      --color-border-tertiary: rgba(255, 255, 255, 0.12);
+      --color-border-secondary: rgba(255, 255, 255, 0.22);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--color-background-primary);
+    -webkit-text-size-adjust: 100%;
+    overscroll-behavior-y: none;
+  }
+</style>
+</head>
+<body>
+<div id="wt-root">
+  <header class="app-bar" id="app-bar">
+    <div class="app-bar-main">
+      <span class="app-bar-icon" id="app-bar-icon"></span>
+      <div class="app-bar-text">
+        <span class="app-bar-title" id="app-bar-title"></span>
+        <span class="app-bar-subtitle" id="app-bar-subtitle"></span>
+      </div>
+      <button class="app-bar-reset" id="app-bar-reset" aria-label="Reset this walkthrough" title="Reset this walkthrough"></button>
+    </div>
+    <div class="app-bar-progress"><div class="app-bar-progress-fill" id="app-bar-progress-fill"></div></div>
+  </header>
+
+  <main id="wt-content" class="wt-content"></main>
+
+  <nav class="bottom-nav" id="bottom-nav"></nav>
+</div>
+
+<style>
+#wt-root {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  --navy: #0f2c46;
+  --navy-100: #dbe6ee;
+  --teal: #0f6e56;
+  --teal-100: #e1f5ee;
+  --accent: #0f6e56;
+  --accent-soft: #e1f5ee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 20;
+  background: var(--accent); color: #fff;
+  padding-top: env(safe-area-inset-top);
+  transition: background 0.25s;
+}
+.app-bar-main { display: flex; align-items: center; gap: 12px; height: 54px; padding: 0 16px; }
+.app-bar-icon { display: flex; flex: 0 0 22px; }
+.app-bar-icon svg { width: 22px; height: 22px; stroke: #fff; }
+.app-bar-text { flex: 1; display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.app-bar-title { font-size: 16px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.app-bar-subtitle { font-size: 11px; opacity: 0.85; }
+.app-bar-reset {
+  flex: 0 0 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.16); border: none; border-radius: 999px; color: #fff; cursor: pointer;
+}
+.app-bar-reset svg { width: 16px; height: 16px; stroke: #fff; }
+.app-bar-progress { height: 3px; background: rgba(255, 255, 255, 0.25); }
+.app-bar-progress-fill { height: 100%; background: #fff; width: 0%; transition: width 0.25s; }
+
+.wt-content {
+  flex: 1; width: 100%; max-width: 760px; margin: 0 auto;
+  padding: calc(54px + env(safe-area-inset-top) + 16px) 16px calc(64px + env(safe-area-inset-bottom) + 16px);
+}
+
+.bottom-nav {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 20;
+  display: flex; background: var(--color-background-primary);
+  border-top: 0.5px solid var(--color-border-tertiary);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.bottom-nav-item {
+  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px;
+  padding: 8px 2px 7px; font-size: 10.5px; font-weight: 500;
+  color: var(--color-text-secondary); background: none; border: none; cursor: pointer;
+  font-family: var(--font-sans); position: relative;
+}
+.bottom-nav-icon {
+  width: 34px; height: 22px; display: flex; align-items: center; justify-content: center;
+  border-radius: 999px; transition: background 0.15s, color 0.15s;
+}
+.bottom-nav-icon svg { width: 18px; height: 18px; }
+.bottom-nav-item.active { color: var(--item-color); }
+.bottom-nav-item.active .bottom-nav-icon { background: var(--item-soft); color: var(--item-color); }
+.bottom-nav-check {
+  position: absolute; top: 3px; right: calc(50% - 19px);
+  width: 8px; height: 8px; border-radius: 50%; background: var(--item-color);
+  border: 1.5px solid var(--color-background-primary);
+}
+
+.wt-stage {
+  border: 0.5px solid var(--color-border-tertiary);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--border-radius-lg);
+  margin-bottom: 12px; overflow: hidden;
+  background: var(--color-background-primary);
+  box-shadow: 0 1px 2px rgba(15, 44, 70, 0.04);
+  transition: border-color 0.15s;
+}
+.wt-stage.all-done { border-color: var(--accent); }
+.wt-stage.muted { background: var(--color-background-tertiary); border-left-color: var(--color-border-secondary); }
+.wt-stage.muted .wt-stage-num:not(.done) { background: var(--color-background-primary); }
+.wt-stage-head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; cursor: pointer; user-select: none;
+}
+.wt-stage-num {
+  flex: 0 0 28px; height: 28px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 500;
+  display: flex; align-items: center; justify-content: center;
+  border: 0.5px solid var(--accent); transition: background 0.15s, color 0.15s;
+}
+.wt-stage-num.done { background: var(--accent); color: #fff; }
+.wt-stage-num svg { width: 14px; height: 14px; }
+.wt-stage-title { flex: 1; font-size: 15px; font-weight: 500; }
+.wt-stage-count { font-size: 12px; color: var(--color-text-secondary); font-weight: 500; }
+.wt-chevron { font-size: 12px; color: var(--color-text-secondary); transition: transform 0.2s; }
+.wt-stage.collapsed .wt-chevron { transform: rotate(-90deg); }
+.wt-stage-body { padding: 0 16px 12px; }
+.wt-stage.collapsed .wt-stage-body { display: none; }
+
+.wt-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 9px 8px; border-radius: var(--border-radius-md);
+  cursor: pointer; transition: background 0.1s;
+}
+.wt-item:hover { background: var(--accent-soft); }
+.wt-item input { margin-top: 3px; flex: 0 0 16px; width: 16px; height: 16px; cursor: pointer; accent-color: var(--accent); }
+.wt-item-text { font-size: 14px; line-height: 1.5; }
+.wt-item.checked .wt-item-text { color: var(--color-text-secondary); text-decoration: line-through; }
+.wt-item-note { display: block; font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; text-decoration: none; }
+.wt-item-link { display: block; font-size: 12px; color: var(--accent); margin-top: 2px; cursor: pointer; text-decoration: underline; }
+.wt-item-link:hover { text-decoration: none; }
+
+.wt-ref {
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  margin-bottom: 12px; background: var(--accent-soft);
+  transition: background 0.15s;
+}
+.wt-ref-head {
+  display: flex; align-items: center; gap: 8px; justify-content: space-between;
+  padding: 12px 16px; cursor: pointer; user-select: none;
+}
+.wt-ref-title { font-size: 14px; font-weight: 500; color: var(--accent); display: flex; align-items: center; gap: 8px; }
+.wt-ref-title svg { width: 15px; height: 15px; flex: 0 0 15px; }
+.wt-ref-body { padding: 0 16px 16px; font-size: 13px; }
+.wt-ref.collapsed .wt-ref-body { display: none; }
+.wt-ref.collapsed .wt-chevron { transform: rotate(-90deg); }
+.wt-ref table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.wt-ref th, .wt-ref td { text-align: left; padding: 6px 8px 6px 0; border-bottom: 0.5px solid rgba(15, 44, 70, 0.08); }
+.wt-ref th { color: var(--color-text-secondary); font-weight: 500; }
+.wt-ref tr:last-child td { border-bottom: none; }
+.wt-ref ul { margin: 4px 0; padding-left: 20px; }
+.wt-ref li { margin-bottom: 4px; }
+.wt-ref code { font-family: var(--font-mono); font-size: 12px; background: var(--color-background-primary); padding: 1px 5px; border-radius: 4px; }
+
+.wt-banner {
+  background: var(--color-background-tertiary);
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: 14px 16px; margin-bottom: 12px;
+  font-size: 13px; color: var(--color-text-secondary); line-height: 1.5;
+}
+.wt-banner-head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.wt-banner-head svg { width: 16px; height: 16px; flex: 0 0 16px; color: var(--color-text-secondary); }
+.wt-banner-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.wt-banner-tag {
+  font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em;
+  color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary);
+  border-radius: 999px; padding: 2px 8px; margin-left: auto;
+}
+.wt-banner p { margin: 0 0 8px; }
+.wt-banner-group { margin-top: 8px; }
+.wt-banner-group-title { font-weight: 500; color: var(--color-text-primary); margin-bottom: 2px; }
+.wt-banner ul { margin: 0 0 0 0; padding-left: 20px; }
+.wt-banner li { margin-bottom: 2px; }
+
+.wt-table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -4px; }
+.wt-table-scroll table { min-width: 480px; }
+
+@media (max-width: 640px) {
+  .app-bar-main { height: 50px; padding: 0 12px; }
+  .app-bar-title { font-size: 15px; }
+  .app-bar-subtitle { font-size: 10.5px; }
+  .wt-content { padding: calc(50px + env(safe-area-inset-top) + 12px) 12px calc(60px + env(safe-area-inset-bottom) + 12px); }
+  .bottom-nav-item { font-size: 10px; }
+
+  .wt-stage-head { padding: 12px; gap: 10px; }
+  .wt-stage-title { font-size: 14px; }
+  .wt-stage-body { padding: 0 12px 10px; }
+  .wt-stage-num { flex: 0 0 26px; height: 26px; }
+
+  .wt-item { padding: 10px 6px; gap: 10px; }
+  .wt-item input { flex: 0 0 18px; width: 18px; height: 18px; }
+  .wt-item-text { font-size: 14px; }
+
+  .wt-ref-head { padding: 12px; }
+  .wt-ref-body { padding: 0 12px 14px; }
+  .wt-banner { padding: 12px; }
+}
+</style>
+
+<script>
+const WALKTHROUGHS = [
+  {
+    id: 'or', name: 'OR (Outsource Required)', color: '#b3501f', accentSoft: '#faece7', icon: 'swap',
+    stages: [
+      { type: 'banner', title: 'Now done automatically by the OR Bot', text: 'The 3 steps directly below (open the work order, fill in outsource details, add note to SDC) used to be done manually for every work order. The OR Bot now completes them automatically \u2013 they\'re kept here, and shaded grey, so you know how to do them yourself if the bot fails or something needs checking.' },
+      { title: 'Open the work order', muted: true, items: [
+        'Open the WorkOrder',
+        'Select the Activity tab',
+        'Select the "Outsource Required" hyperlink'
+      ]},
+      { title: 'Fill in outsource details', muted: true, items: [
+        { text: 'Add the charge code', note: 'Charge codes \u2013 see reference below' },
+        'Set status to "Completed"',
+        'Add today\'s date',
+        'Set approval to "Accept"'
+      ]},
+      { title: 'Add note to SDC', muted: true, items: [
+        'Add note "OR Completed"'
+      ]},
+      { title: 'Search Golden Gate', items: [
+        'Copy the WorkOrder number from the OR Task Automation Bot report',
+        'Paste it into the WorkOrder box',
+        'Set ASR Status to "Check All"',
+        'Click "Search"',
+        { text: 'Click the hyperlink for the ASR No.', note: 'The WO No. hyperlink takes you back to the work order in SDC' }
+      ]},
+      { title: 'Set ASR ownership', items: [
+        'Go to ASR Ownership',
+        'Set the owner to the owner of the WorkOrder/Customer',
+        'Set status to "Open"',
+        { text: 'Add a comment in the format DDMMM-MD;RFQ Sent to [Supplier Name]', note: 'Always click "Save" after the comment, or it will be lost' }
+      ]},
+      { title: 'Find or select a supplier', items: [
+        'Select "Find Supplier"',
+        { text: 'If no supplier is found, check the work order history in SDC for a previous supplier' },
+        { text: 'If there is a previous supplier, enter that supplier into the "Find Supplier" search', note: 'If there is no previous supplier, send a request for supplier suggestions instead \u2013 see escalation steps below' },
+        { text: 'Select a supplier', note: 'Always try the "Manual Site" option first' },
+        { text: 'Submit', note: 'Remember to copy the supplier name into the comment section' },
+        'Click "Save" in the Action section and wait for it to save'
+      ]},
+      { title: 'Create and send the RFQ', items: [
+        'Click "Create RFQ"',
+        'Check the email address matches the supplier details, then send',
+        'Add note to SDC: "RFQ Sent to [Supplier Name]"'
+      ]}
+    ],
+    refs: [
+      { title: 'Charge codes', table: {
+        head: ['Charge code', 'Code'],
+        rows: [
+          ['Calibration charge code', 'ROC5G'],
+          ['Shipping charge code', 'RTC5G'],
+          ['Repair charge code', 'ROR5H'],
+          ['Tech eval charge code', 'ROR5T']
+        ]
+      }},
+      { title: 'Supplier suggestion escalation', html:
+        '<ul>' +
+        '<li>Send the supplier info request to Quality, with the work order</li>' +
+        '<li>No response after 28 hours \u2192 drop Alex a team message for an immediate response</li>' +
+        '<li>No response within 48 hours of the first email \u2192 escalate to Meena</li>' +
+        '<li>No response within 96 hours \u2192 escalate to Scott</li>' +
+        '</ul>'
+      },
+      { title: 'MU codes and depots', html:
+        '<table><tr><th>Item</th><th>Detail</th></tr>' +
+        '<tr><td>MU code (calibration)</td><td><code>295631</code></td></tr>' +
+        '<tr><td>MU code (repair)</td><td><code>295836</code></td></tr>' +
+        '<tr><td>Telford depot</td><td>TFCSL \u2013 Keysight Technologies, Halesfield 7, Telford, TF7 4QL</td></tr>' +
+        '<tr><td>Winnersh depot</td><td>FCSL \u2013 Keysight Technologies, 610 Wharfedale Road, Winnersh Triangle, Wokingham, RG41 5TP</td></tr>' +
+        '</table>'
+      }
+    ]
+  },
+  {
+    id: 'quote', name: 'Quote', color: '#0f6e56', accentSoft: '#e1f5ee', icon: 'receipt',
+    stages: [
+      { title: 'Build the quote in Golden Gate', items: [
+        'Check the supplier matches Golden Gate and the quote',
+        'Add the "Quote Number"',
+        'Change currency to match the quote',
+        { text: 'Set the lead time from the Supplier Average TAT spreadsheet', note: 'If the supplier isn\'t on the sheet, use 30 working days' },
+        'Attach the quote/email',
+        'Click "Save"'
+      ]},
+      { title: 'Generate the markup', items: [
+        'Click "Send to SF"',
+        'Click "Markup Cal"',
+        'Download the PDF'
+      ]},
+      { title: 'Set up pricing in SDC', items: [
+        'Attach the downloaded markup to the work order',
+        'Click "Pricing"',
+        { text: 'Add the charge code to match the service, then click "Save"', note: 'Charge codes \u2013 see reference below' }
+      ]},
+      { title: 'Configure the new quote in SF', items: [
+        'Click "New Quote" and open the hyperlink',
+        'Click "Price"',
+        'Click "Clear BP Reference"'
+      ]},
+      { title: 'Get approval', items: [
+        'Tick "Price Override" and add the price from the markup',
+        'On the Approvals tab, tick "Bypass All Approvals"',
+        'Add a "." in "Bypass Approval Reason"',
+        'Click "Submit for Approval"'
+      ]},
+      { title: 'Finalise the quote details', items: [
+        'On the Print/Email tab, tick "Print Quote Details"',
+        'Add the service/calibration details, supplier and average TAT to the Quote Details box',
+        { text: 'If applicable, add the \u00a375 quote rejection fee', note: 'Check the Customer Profile to confirm' },
+        'Click "Update Quote"'
+      ]},
+      { title: 'Email the quote', items: [
+        { text: 'Click "Email Quote"', note: 'This always goes to your personal email' },
+        { text: 'If over the agreed limit: send the quote to the customer \u2013 change "From" to Contact Centre UK, add customer emails from the CP, and send marked as action required', note: 'Add SDC note "Quoted - Sent to SOM" and add to the description "Quoted DD/MM - Pending approval". Do not click Accept Quote, and change the owner to SOM. Check the Customer Profile for the agreed limit.' },
+        { text: 'If under the agreed limit: click "Accept Quote", then send the quote to the customer \u2013 change "From" to Contact Centre UK, add customer emails from the CP, and send as info only', note: 'Add SDC note "Quote accepted \u2013 under limit" and start the PO process. Check the Customer Profile for the agreed limit.', link: { text: 'Go to PO walkthrough', target: 'po' } }
+      ]}
+    ],
+    refs: [
+      { title: 'Charge codes', table: {
+        head: ['Charge code', 'Code'],
+        rows: [
+          ['Calibration charge code', 'ROC5G'],
+          ['Shipping charge code', 'RTC5G'],
+          ['Repair charge code', 'ROR5H'],
+          ['Tech eval charge code', 'ROR5T']
+        ]
+      }}
+    ]
+  },
+  {
+    id: 'po', name: 'PO', color: '#3b6d11', accentSoft: '#eaf3de', icon: 'po',
+    stages: [
+      { title: 'Open the work order and quote', items: [
+        'Open the WorkOrder on Golden Gate',
+        'Open the quote from the quote hyperlink or Outlook',
+        'Check the price on the quote against Golden Gate, and check the supplier name against the quote'
+      ]},
+      { title: 'Submit the SRF', items: [
+        'Click "Submit SRF"',
+        'Put any details for the supplier into the "Supplier Notes"',
+        { text: 'Check the correct address is selected for the supplier', note: 'This is the address we\'ll ship the unit to' },
+        'Check the correct BPO line is selected if it\'s a BPO supplier',
+        'Click "Save & Preview"'
+      ]},
+      { title: 'Create and send the PO', items: [
+        'Check the details are correct on the PO',
+        'Click "Create SRF" and wait for the PO to be sent to your personal email',
+        'Attach the PO to the supplier quote email',
+        { text: 'Send the email using the template provided', note: 'See PO email template below' }
+      ]},
+      { title: 'Update SDC', items: [
+        'Add note to SDC: "PO Sent - Ready to ship"'
+      ]},
+      { title: 'International suppliers', items: [
+        { text: 'If the supplier is abroad, check for an EORI number and a Customs Number', note: 'See supplier reference below' },
+        { text: 'If the EORI number or Customs Number isn\'t available, put the work order on shipment hold and request it from the supplier' }
+      ]}
+    ],
+    refs: [
+      { title: 'PO email template', html:
+        '<p>"Good [Supplier Name],<br>' +
+        'Thank you for the quotation.<br>' +
+        'Please find attached our PO to cover the costs.<br>' +
+        'Kindly provide us with an order acknowledgement and a completion date once the unit has been delivered to you."</p>'
+      },
+      { title: 'Supplier EORI numbers and notes', table: {
+        head: ['Supplier', 'Country', 'EORI number', 'Comments'],
+        rows: [
+          ['Aaronia', 'Germany', 'DE5165067', ''],
+          ['AIM GmbH', 'Germany', 'DE2720337', 'RMA form to be completed for AIM to issue RMA number/details'],
+          ['AOIP', 'France', 'FR44752479400032', ''],
+          ['Baker Hughes', 'Germany', 'DE2295741', ''],
+          ['Baker Hughes (Panametrics)', 'Ireland', 'IE6430117W', 'COSHH form required'],
+          ['Beckman Coulter', 'Germany', 'DE2419769', 'RMA required'],
+          ['Coherent', 'Germany', 'NL803493265', 'RMA required inc customs invoice information'],
+          ['HBK', 'Germany', 'DE2219522', ''],
+          ['Intellifast', 'Germany', 'DE1946226', ''],
+          ['Kiwa', 'Netherlands', 'NL805613468', ''],
+          ['National Instruments', 'Hungary', 'N/A', 'NI arrange collection / commercial invoice & FedEx labels provided'],
+          ['Ophir', 'Germany', 'DE5275423', ''],
+          ['Pfeiffer Vacuum', 'Germany', '', 'Pfeiffer now arrange collection & return'],
+          ['Rosenberger', 'Germany', 'DE4150910', 'RMA required inc customs invoice information'],
+          ['Tektronix', 'Germany', 'No EORI', 'Shipments to Tektronix do not require EORI / self shipping option (unless shipment to Tektronix US)'],
+          ['Teledyne GmbH', 'Germany', 'DE3363228', ''],
+          ['Vaisala', 'Finland', 'FI0124416-2', ''],
+          ['AMS Technologies', 'Germany', 'DE629528945873911', ''],
+          ['BONN Elektronik GmbH', 'Germany', 'DE 129 372 114', ''],
+          ['Omicron', 'Austria', 'ATEOS1000002818', '']
+        ]
+      }}
+    ]
+  },
+  {
+    id: 'wip', name: 'WIP report', color: '#1d5fa5', accentSoft: '#e6f1fb', icon: 'list',
+    stages: [
+      { title: 'Open and refresh', items: [
+        'Open the Customer WIP',
+        'Go to the Data tab and click "Refresh All"',
+        'Click "Ignore Privacy"',
+        'Click "Update Report"'
+      ]},
+      { title: 'Work through work order status', items: [
+        { text: 'Awaiting Supplier Quote \u2192 chase the supplier and set schedule date to "TBC"' },
+        { text: 'Pending Customer Action \u2192 chase the customer and set schedule date to "TBC"' },
+        { text: 'Ready to Ship to Supplier \u2192 change status to "Service in Progress"' },
+        { text: 'On Hold \u2192 set schedule date to "TBC"' },
+        { text: 'To Be Booked Out \u2192 change to "Booked Out" once the BOR is done' },
+        { text: 'Booked Out \u2192 confirm BOR Completed' },
+        { text: 'Service in Progress \u2192 add an update for the customer regarding the progress of the unit' }
+      ]},
+      { title: 'Create and format the WIP', items: [
+        'Click the "Create WIP" button',
+        { text: 'Format the WIP', note: 'Row height 32.5, align text bottom/left, clear fill, freeze top row and first column, long date format, mark reschedule dates red, check each status has the correct action' }
+      ]},
+      { title: 'Prep and send', items: [
+        'Share/attach a copy of the workbook',
+        'Add WIP contacts from the Customer Profile',
+        'Add the WIP email template',
+        'Click "Send"'
+      ]}
+    ],
+    refs: [
+      { title: 'WIP due days by customer', table: {
+        head: ['Customer', 'Due (chase the day before)'],
+        rows: [
+          ['Airbus', 'Thursday'],
+          ['Arabelle', 'Thursday'],
+          ['GE Aviation Systems Ltd', 'Thursday'],
+          ['GT Hatachi', 'Thursday'],
+          ['Leonardo Helicopters', 'Wednesday'],
+          ['Lifescan', 'Wednesday'],
+          ['MBDA Bolton', 'Monday'],
+          ['Techtest (HR Smith)', 'Monday'],
+          ['UK Grid', 'Monday'],
+          ['Babcock / Dowty Propellers / Keysight', 'N/A']
+        ]
+      }},
+      { title: 'WIP email template', html:
+        '<p>"Good morning everyone, please find attached this week\'s WIP report with the latest updates on outsourced units. Kindly let me know if you have any questions. Thank you and kind regards."</p>'
+      }
+    ]
+  },
+  {
+    id: 'chaser-admin', name: 'Chaser admin WIP', short: 'Admin', color: '#6e4fa3', accentSoft: '#eeedfe', icon: 'bell',
+    stages: [
+      { title: 'Import Golden Gate data', items: [
+        { text: 'In Chaser, go to the "Supplier Raw Data" tab, press Ctrl+A then Delete', note: 'Do not select the headers, and don\'t right-click and delete' },
+        'In Golden Gate: Reports > ASR > "Download Complete SRF", then open it',
+        'Select a cell in the first column, press Ctrl+A, format as a table',
+        { text: 'Select a cell in the first column and press Ctrl+A again', note: 'Only once, and don\'t select the headers' },
+        'Copy the data',
+        'Go back to "Supplier Raw Data" in Chaser and select the top-left cell under the header',
+        { text: 'Paste special', note: 'Click the small arrow under Paste, choose "Paste Special", select "Values" and click "OK"' },
+        'Return to the "Chaser" tab and select "Refresh from WIP"',
+        'Confirm with the team that the Golden Gate data is in'
+      ]},
+      { title: 'Filter and review', items: [
+        'Scroll over the "Chaser" part of the WIP',
+        'Filter the relevant "CX Lead" column',
+        'Filter "Yes" in the "Chase Today" column',
+        'Make sure everything looks correct and the reasoning matches'
+      ]},
+      { title: 'Check the team and refresh', items: [
+        { text: 'Make sure everyone\'s name is highlighted green', note: 'Red means excluded for any reason' },
+        'Refresh from WIP',
+        'Click "Sync from Customer File"',
+        'Check everyone\'s name is in the pop-up and has a changes count'
+      ]},
+      { title: 'Send the chasers', items: [
+        'If everything is right, select "Chase Supplier Quote"',
+        'Go to the email drafts and work through them, checking and sending each one'
+      ]}
+    ],
+    refs: [
+      { title: 'CX Leads', html:
+        '<ul><li>Yasmin</li><li>Monika</li><li>Gierde</li><li>Madhav</li><li>Jess</li><li>Janet</li><li>Lak</li></ul>'
+      }
+    ]
+  },
+  {
+    id: 'chaser-customer', name: 'Chaser customer WIP', short: 'Customer', color: '#A32D2D', accentSoft: '#fcebeb', icon: 'mail',
+    stages: [
+      { title: 'Open and refresh', items: [
+        'Open your WIP',
+        'Go to Data',
+        'Click "Refresh All"',
+        'Click "Ignore Privacy"',
+        'Make sure all queries refresh'
+      ]},
+      { title: 'Filter and check', items: [
+        { text: 'Filter "Yes" in the "Chase Today" column', note: 'If the chase count is over 4, call the supplier instead' },
+        'Check emails for any recent updates or quotes from the supplier'
+      ]},
+      { title: 'Decide if a chase is needed', items: [
+        { text: 'If chase is not required, select one of the drop options and input a follow-up date or ETA date', note: 'See chaser status options below' },
+        { text: 'If chase is required, make sure the Chaser Status is relevant' }
+      ]},
+      { title: 'Send to chaser', items: [
+        { text: 'Do not refresh while making changes', note: 'You will lose your progress' },
+        'Click "Send to Chaser"'
+      ]}
+    ],
+    refs: [
+      { title: 'Chaser status options', html:
+        '<ul>' +
+        '<li>No Chase Required</li>' +
+        '<li>PUR Raised</li>' +
+        '<li>Quote Received</li>' +
+        '<li>Request Alt Supplier</li>' +
+        '<li>Awaiting Supplier Quote</li>' +
+        '<li>Service In Progress \u2013 Pending ETA</li>' +
+        '<li>Service In Progress \u2013 ETA Received</li>' +
+        '<li>Service In Progress \u2013 ETA Elapsed</li>' +
+        '</ul>'
+      },
+      { title: 'Error submission (if something goes wrong)', html:
+        '<ul>' +
+        '<li>Add the date</li>' +
+        '<li>Issue type: spreadsheet error or supplier email error</li>' +
+        '<li>If a spreadsheet issue: note where it happened (sheet/refresh/data input) and any error message, plus why it seems incorrect</li>' +
+        '<li>If a supplier email issue: note the supplier name, the incorrect email, and the correct email</li>' +
+        '<li>Click "Save and Continue"</li>' +
+        '</ul>'
+      }
+    ]
+  },
+  {
+    id: 'pur', name: 'PUR', color: '#a23b66', accentSoft: '#fbeaf0', icon: 'truck',
+    stages: [
+      { title: 'Open Golden Gate and request pickup', items: [
+        'Open Golden Gate',
+        'Click "Request Pickup"'
+      ]},
+      { title: 'Add the work order', items: [
+        { text: 'Paste the WorkOrder number into the corresponding box', note: 'Follow the instructions if there are multiple work orders' },
+        { text: 'Select "Add WorkOrder"', note: 'If multiple, select "Join Connected WorkOrder" instead' }
+      ]},
+      { title: 'Check supplier details', items: [
+        'Check the supplier name and address are correct'
+      ]},
+      { title: 'Pick a van run date', items: [
+        'Search the VanRun Database using the postcode from the Supplier Pickup Address',
+        'Select the next VanRun date in the "Collection Date" box'
+      ]},
+      { title: 'Save and preview', items: [
+        'Click "Save & Preview"'
+      ]},
+      { title: 'Update SDC and notify the supplier', items: [
+        'Add note to SDC: "PUR = [Collection Date]"',
+        'Add description: "Service completed - Unit in transit from supplier"',
+        'Email the supplier confirming the PUR date'
+      ]}
+    ],
+    refs: []
+  },
+  {
+    id: 'bor', name: 'BOR', color: '#b9770e', accentSoft: '#faeeda', icon: 'box',
+    stages: [
+      { title: 'Pre-checks', items: [
+        'Check Transship Inbound is "Complete"',
+        'Check "On Hold Reason" is Outsource Pending Clean & Close',
+        'Check which service: Calibration, Repair or Both'
+      ]},
+      { title: 'Verify details', items: [
+        'Check Serial No. and Asset No. match SDC and the Certificate',
+        'Check the schedule date is NOT in the past'
+      ]},
+      { title: 'Complete the BOR form', items: [
+        { text: 'Add the WorkOrder number', note: 'From SDC' },
+        { text: 'Add the customer name', note: 'From SDC' },
+        { text: 'Add the calibration date', note: 'From the certificate' },
+        { text: 'Add the asset no. and serial no.', note: 'From SDC and the certificate' },
+        { text: 'Confirm service performed', note: 'From SDC' },
+        { text: 'Add "Checked by"', note: 'Your name' },
+        { text: 'Add the van run day', note: 'From the Customer Profile' },
+        { text: 'Add the site (where the unit is)', note: 'From SDC \u2013 Telford (TFCSL) or Winnersh (FCSL)' },
+        { text: 'Upload the certificate' }
+      ]},
+      { title: 'Submit', items: [
+        'Click "Submit"'
+      ]},
+      { title: 'Update SDC', items: [
+        'Add note "BOR Sent" and assign to SOM',
+        'Add description note: "Service completed - Unit to be returned to customer on the next van run"'
+      ]}
+    ],
+    refs: []
+  }
+];
+
+const STORAGE_KEY = 'wt-progress';
+let progressData = {};
+let activeId = WALKTHROUGHS[0].id;
+let collapsedStages = {};
+let collapsedRefs = {};
+
+const ICON_PATHS = {
+  receipt: '<path d="M6 2h12v20l-3-2-3 2-3-2-3 2V2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/>',
+  po: '<path d="M6 2h9l3 3v17H6z"/><path d="M15 2v3h3"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="13" y2="15"/>',
+  swap: '<path d="M4 4v5h5"/><path d="M20 20v-5h-5"/><path d="M5 9a8 8 0 0 1 14-3"/><path d="M19 15a8 8 0 0 1-14 3"/>',
+  list: '<path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><path d="m3 6 1 1 2-2"/><path d="m3 12 1 1 2-2"/><path d="m3 18 1 1 2-2"/>',
+  bell: '<path d="M10 21a2 2 0 0 0 4 0"/><path d="M3.3 14A6.8 6.8 0 0 1 4 11a8 8 0 1 1 16 0 6.8 6.8 0 0 1 .7 3H3.3z"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+  box: '<path d="M12 3 3 7v10l9 4 9-4V7z"/><path d="M3 7l9 4 9-4"/><path d="M12 11v10"/>',
+  truck: '<path d="M3 7h11v9H3z"/><path d="M14 11h4l3 3v2h-7z"/><circle cx="6.5" cy="18" r="1.5"/><circle cx="17.5" cy="18" r="1.5"/>',
+  info: '<circle cx="12" cy="12" r="9"/><line x1="12" y1="11" x2="12" y2="16"/><circle cx="12" cy="8" r="0.6" fill="currentColor" stroke="none"/>',
+  check: '<path d="M5 12l4 4 10-10"/>',
+  reset: '<path d="M3 12a9 9 0 1 0 2.6-6.4"/><path d="M3 4v5h5"/>'
+};
+
+function icon(name) {
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
+    'stroke-linecap="round" stroke-linejoin="round">' + (ICON_PATHS[name] || '') + '</svg>';
+}
+
+function itemKey(stageIdx, itemIdx) { return stageIdx + '-' + itemIdx; }
+
+function getWtProgress(wt) {
+  if (!progressData[wt.id]) progressData[wt.id] = {};
+  return progressData[wt.id];
+}
+
+function totalItems(wt) {
+  return wt.stages.reduce((sum, s) => sum + (s.items ? s.items.length : 0), 0);
+}
+
+function doneItems(wt) {
+  const p = getWtProgress(wt);
+  return Object.values(p).filter(Boolean).length;
+}
+
+async function loadProgress() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) progressData = JSON.parse(raw);
+  } catch (e) {
+    progressData = {};
+  }
+}
+
+async function saveProgress() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(progressData));
+  } catch (e) {}
+}
+
+function renderBottomNav() {
+  const nav = document.getElementById('bottom-nav');
+  nav.innerHTML = '';
+  WALKTHROUGHS.forEach(wt => {
+    const total = totalItems(wt);
+    const done = doneItems(wt);
+    const complete = total && done === total;
+
+    const btn = document.createElement('button');
+    btn.className = 'bottom-nav-item' + (wt.id === activeId ? ' active' : '');
+    btn.style.setProperty('--item-color', wt.color);
+    btn.style.setProperty('--item-soft', wt.accentSoft);
+    btn.innerHTML = '<span class="bottom-nav-icon">' + icon(wt.icon) + '</span><span>' + (wt.short || wt.name.split(' ')[0]) + '</span>' +
+      (complete ? '<span class="bottom-nav-check"></span>' : '');
+    btn.onclick = () => { activeId = wt.id; render(); window.scrollTo(0, 0); };
+    nav.appendChild(btn);
+  });
+}
+
+function renderAppBar(wt) {
+  const total = totalItems(wt);
+  const done = doneItems(wt);
+  const pct = total ? Math.round((done / total) * 100) : 0;
+
+  document.getElementById('app-bar').style.background = wt.color;
+  document.getElementById('app-bar-icon').innerHTML = icon(wt.icon);
+  document.getElementById('app-bar-title').textContent = wt.name;
+  document.getElementById('app-bar-subtitle').textContent = done + ' / ' + total + ' steps complete';
+  document.getElementById('app-bar-progress-fill').style.width = pct + '%';
+  document.getElementById('app-bar-reset').innerHTML = icon('reset');
+
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) themeColor.setAttribute('content', wt.color);
+}
+
+function renderItem(wt, stageIdx, itemIdx, item) {
+  const isObj = typeof item === 'object';
+  const text = isObj ? item.text : item;
+  const note = isObj ? item.note : null;
+  const key = itemKey(stageIdx, itemIdx);
+  const checked = !!getWtProgress(wt)[key];
+
+  const row = document.createElement('label');
+  row.className = 'wt-item' + (checked ? ' checked' : '');
+
+  const cb = document.createElement('input');
+  cb.type = 'checkbox';
+  cb.checked = checked;
+  cb.onchange = () => {
+    const p = getWtProgress(wt);
+    if (cb.checked) p[key] = true; else delete p[key];
+    saveProgress();
+    render();
+  };
+
+  const textWrap = document.createElement('span');
+  textWrap.className = 'wt-item-text';
+  textWrap.textContent = text;
+  if (note) {
+    const noteEl = document.createElement('span');
+    noteEl.className = 'wt-item-note';
+    noteEl.textContent = note;
+    textWrap.appendChild(noteEl);
+  }
+  if (isObj && item.link) {
+    const linkEl = document.createElement('a');
+    linkEl.className = 'wt-item-link';
+    linkEl.textContent = item.link.text;
+    linkEl.onclick = (e) => {
+      e.preventDefault();
+      activeId = item.link.target;
+      render();
+    };
+    textWrap.appendChild(linkEl);
+  }
+
+  row.appendChild(cb);
+  row.appendChild(textWrap);
+  return row;
+}
+
+function renderStage(wt, stageIdx, displayNum, stage) {
+  const wrap = document.createElement('div');
+  const stageDone = stage.items.filter((_, i) => getWtProgress(wt)[itemKey(stageIdx, i)]).length;
+  const allDone = stageDone === stage.items.length;
+  wrap.className = 'wt-stage' + (collapsedStages[wt.id + '-' + stageIdx] ? ' collapsed' : '') + (allDone ? ' all-done' : '') + (stage.muted ? ' muted' : '');
+
+  const head = document.createElement('div');
+  head.className = 'wt-stage-head';
+  head.onclick = () => {
+    const k = wt.id + '-' + stageIdx;
+    collapsedStages[k] = !collapsedStages[k];
+    render();
+  };
+
+  const num = document.createElement('div');
+  num.className = 'wt-stage-num' + (allDone ? ' done' : '');
+  num.innerHTML = allDone ? icon('check') : displayNum;
+
+  const title = document.createElement('div');
+  title.className = 'wt-stage-title';
+  title.textContent = stage.title;
+
+  const count = document.createElement('div');
+  count.className = 'wt-stage-count';
+  count.textContent = stageDone + '/' + stage.items.length;
+
+  const chevron = document.createElement('div');
+  chevron.className = 'wt-chevron';
+  chevron.textContent = '\u25be';
+
+  head.appendChild(num);
+  head.appendChild(title);
+  head.appendChild(count);
+  head.appendChild(chevron);
+
+  const body = document.createElement('div');
+  body.className = 'wt-stage-body';
+  stage.items.forEach((item, i) => body.appendChild(renderItem(wt, stageIdx, i, item)));
+
+  wrap.appendChild(head);
+  wrap.appendChild(body);
+  return wrap;
+}
+
+function renderRef(wt, refIdx, ref) {
+  const wrap = document.createElement('div');
+  const key = wt.id + '-' + refIdx;
+  wrap.className = 'wt-ref' + (collapsedRefs[key] !== false ? ' collapsed' : '');
+
+  const head = document.createElement('div');
+  head.className = 'wt-ref-head';
+  head.onclick = () => {
+    collapsedRefs[key] = collapsedRefs[key] === false ? true : false;
+    render();
+  };
+
+  const title = document.createElement('div');
+  title.className = 'wt-ref-title';
+  title.innerHTML = icon('info') + '<span>' + ref.title + '</span>';
+
+  const chevron = document.createElement('div');
+  chevron.className = 'wt-chevron';
+  chevron.textContent = '\u25be';
+
+  head.appendChild(title);
+  head.appendChild(chevron);
+
+  const body = document.createElement('div');
+  body.className = 'wt-ref-body';
+
+  if (ref.table) {
+    const table = document.createElement('table');
+    const headRow = document.createElement('tr');
+    ref.table.head.forEach(h => {
+      const th = document.createElement('th');
+      th.textContent = h;
+      headRow.appendChild(th);
+    });
+    table.appendChild(headRow);
+    ref.table.rows.forEach(r => {
+      const tr = document.createElement('tr');
+      r.forEach(c => {
+        const td = document.createElement('td');
+        td.textContent = c;
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+    const scroll = document.createElement('div');
+    scroll.className = 'wt-table-scroll';
+    scroll.appendChild(table);
+    body.appendChild(scroll);
+  } else if (ref.html) {
+    body.innerHTML = ref.html;
+  }
+
+  wrap.appendChild(head);
+  wrap.appendChild(body);
+  return wrap;
+}
+
+function renderBanner(banner) {
+  const wrap = document.createElement('div');
+  wrap.className = 'wt-banner';
+
+  let html = '<div class="wt-banner-head">' + icon('info') +
+    '<span class="wt-banner-title">' + (banner.title || '') + '</span>' +
+    '<span class="wt-banner-tag">For information only</span></div>';
+
+  if (banner.text) html += '<p>' + banner.text + '</p>';
+
+  (banner.groups || []).forEach(group => {
+    html += '<div class="wt-banner-group">';
+    if (group.title) html += '<div class="wt-banner-group-title">' + group.title + '</div>';
+    html += '<ul>' + group.items.map(it => '<li>' + (typeof it === 'object' ? it.text : it) + '</li>').join('') + '</ul>';
+    html += '</div>';
+  });
+
+  wrap.innerHTML = html;
+  return wrap;
+}
+
+function render() {
+  const wt = WALKTHROUGHS.find(w => w.id === activeId);
+
+  const root = document.getElementById('wt-root');
+  root.style.setProperty('--accent', wt.color);
+  root.style.setProperty('--accent-soft', wt.accentSoft);
+
+  renderAppBar(wt);
+  renderBottomNav();
+
+  const content = document.getElementById('wt-content');
+  content.innerHTML = '';
+  let displayNum = 0;
+  wt.stages.forEach((stage, i) => {
+    if (stage.type === 'banner') {
+      content.appendChild(renderBanner(stage));
+    } else {
+      displayNum += 1;
+      content.appendChild(renderStage(wt, i, displayNum, stage));
+    }
+  });
+  (wt.refs || []).forEach((ref, i) => content.appendChild(renderRef(wt, i, ref)));
+
+  document.getElementById('app-bar-reset').onclick = () => {
+    if (confirm('Reset progress for ' + wt.name + '?')) {
+      progressData[wt.id] = {};
+      saveProgress();
+      render();
+    }
+  };
+}
+
+loadProgress().then(render);
+</script>
+
+</body>
+</html>
